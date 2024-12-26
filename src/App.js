@@ -4,6 +4,9 @@ import About from './pages/About';
 import TouristSpot from './pages/TouristSpot';
 import Food from './pages/Food';
 import History from './pages/History';
+import Hotels from './pages/Hotels'; // New page
+import Transportation from './pages/Transportation'; // New page
+import Weather from './pages/Weather'; // New page
 import Navbar from './components/Navbar';
 
 const App = () => {
@@ -55,6 +58,9 @@ const App = () => {
                 <Route path="/tourist-spot" element={<TouristSpot />} />
                 <Route path="/food" element={<Food />} />
                 <Route path="/history" element={<History />} />
+                <Route path="/hotels" element={<Hotels />} /> {/* New route */}
+                <Route path="/transportation" element={<Transportation />} /> {/* New route */}
+                <Route path="/weather" element={<Weather />} /> {/* New route */}
             </Routes>
         </Router>
     );

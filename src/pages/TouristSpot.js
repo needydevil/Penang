@@ -2,9 +2,14 @@ import React from 'react';
 
 const TouristSpot = () => {
     return (
-        <div>
-            <h1>Tourist Spot Page</h1>
-            <p>This is the Tourist Spot page. Content will be added later.</p>
+        <div style={{ padding: '20px', textAlign: 'center' }}>
+            <h1>Tourist Spots</h1>
+            <p>Explore the most beautiful places in Penang!</p>
+            <ul>
+                <li>Penang Hill</li>
+                <li>Kek Lok Si Temple</li>
+                <li>Batu Ferringhi</li>
+            </ul>
         </div>
     );
 };

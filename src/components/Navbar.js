@@ -1,16 +1,40 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import '../App.css'; // Ensure this file exists for styling
 
 const Navbar = () => {
     return (
-        <nav style={{ padding: '10px', backgroundColor: '#f8f9fa', marginBottom: '20px' }}>
-            <ul style={{ display: 'flex', listStyle: 'none', justifyContent: 'center', gap: '20px', padding: 0 }}>
-                <li><Link to="/" style={{ textDecoration: 'none', color: '#007bff' }}>Home</Link></li>
-                <li><Link to="/about" style={{ textDecoration: 'none', color: '#007bff' }}>About</Link></li>
-                <li><Link to="/tourist-spot" style={{ textDecoration: 'none', color: '#007bff' }}>Tourist Spots</Link></li>
-                <li><Link to="/food" style={{ textDecoration: 'none', color: '#007bff' }}>Food</Link></li>
-                <li><Link to="/history" style={{ textDecoration: 'none', color: '#007bff' }}>History</Link></li>
-            </ul>
+        <nav className="navbar">
+            <div className="navbar-container">
+                <div className="logo">LOGO</div>
+                <ul className="navbar-links">
+                    <li>
+                        <NavLink to="/" activeClassName="active" exact>
+                            Home
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/about" activeClassName="active">
+                            About Penang
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/tourist-spot" activeClassName="active">
+                            Tourist Spot
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/food" activeClassName="active">
+                            Food
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/history" activeClassName="active">
+                            History
+                        </NavLink>
+                    </li>
+                </ul>
+            </div>
         </nav>
     );
 };

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
 import About from './pages/About';
 import TouristSpot from './pages/TouristSpot';
 import Food from './pages/Food';
@@ -52,7 +51,6 @@ const App = () => {
 
             {/* Define Routes for Different Pages */}
             <Routes>
-                <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/tourist-spot" element={<TouristSpot />} />
                 <Route path="/food" element={<Food />} />

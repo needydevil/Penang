@@ -30,7 +30,7 @@ const Navbar = () => {
                     </li>
                     <li>
                         <NavLink to="/history" activeClassName="active">
-                            History
+                            Culture & History
                         </NavLink>
                     </li>
                 </ul>

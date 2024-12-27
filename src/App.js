@@ -13,8 +13,6 @@ const App = () => {
     return (
         <Router>
             <Navbar />
-
-            {/* Define Routes for Different Pages */}
             <Routes>
                 <Route path="/about" element={<About />} />
                 <Route path="/tourist-spot" element={<TouristSpot />} />

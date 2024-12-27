@@ -1,0 +1,95 @@
+.tourist-spot-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 20px auto;
+    max-width: 1200px; /* Center and limit width */
+    padding: 20px;
+    position: relative;
+    left: 30px; /* Move the container to the left */
+}
+
+.tourist-spot-image-container {
+    position: relative;
+    padding: 20px;
+    display: inline-block;
+    margin-top: 30px;
+    width: fit-content; /* Adjust dynamically to content */
+}
+
+.tourist-spot-image-container::before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    bottom: -10px; /* Adjusts the bottom part of the background */
+    left: -50px; /* Move the background to the left */
+    width: calc(100% - 30px); /* Extend width to account for left offset */
+    height: 100%;
+    background-color: #d6eaff; /* Deeper but soft blue */
+    z-index: 1;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    border-radius: 20px;
+}
+
+.tourist-spot-image {
+    position: relative;
+    z-index: 2; /* Keep the image above the background */
+    margin: -20px 0 0 -20px; /* Slight overlap on top and left */
+    width: 625px; /* Adjust the image size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 20px;
+}
+
+.tourist-spot-content {
+    flex: 1;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    color: #333;
+}
+
+.tourist-spot-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.tourist-spot-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.tourist-spot-content a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.tourist-spot-content a:hover {
+    text-decoration: underline;
+}
+
+.build-trip-button {
+    background-color: #6c63ff; /* Button color */
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.build-trip-button:hover {
+    background-color: #574ed9; /* Darker hover effect */
+}
+
+
+.powered-by {
+    font-size: 14px;
+    color: gray;
+    margin-top: 5px;
+}

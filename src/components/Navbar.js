@@ -6,9 +6,18 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="navbar-container">
-                <NavLink to="/" className="logo">
-                    LOGO
-                </NavLink>
+                {/* Real Logo Section */}
+                <div className="logo-container">
+                    <NavLink to="/" className="logo">
+                        <img 
+                            src="/title.jpg" // Update the path to your logo image
+                            alt="Areca Logo"
+                            className="logo-image"
+                        />
+                    </NavLink>
+                </div>
+
+                {/* Navigation Links */}
                 <ul className="navbar-links">
                     <li className="dropdown">
                         <NavLink to="/about" activeClassName="active">

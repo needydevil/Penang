@@ -19,7 +19,6 @@ const TouristSpot = () => {
                 <button className="build-trip-button">
                     Start Discover
                 </button>
-                <p className="powered-by">Powered by AI</p>
             </div>
         </div>
     );

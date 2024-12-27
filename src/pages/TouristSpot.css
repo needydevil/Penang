@@ -52,7 +52,7 @@
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 20px;
-    color: #007bff;
+    color: #0044cc;
 }
 
 .tourist-spot-content p {
@@ -85,11 +85,4 @@
 
 .build-trip-button:hover {
     background-color: #574ed9; /* Darker hover effect */
-}
-
-
-.powered-by {
-    font-size: 14px;
-    color: gray;
-    margin-top: 5px;
 }

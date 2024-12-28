@@ -63,6 +63,40 @@ const TouristSpot = () => {
                     <button className="view-more-button">View More</button>
                 </div>
             </div>
+
+            {/* Section 4: Beaches in Penang */}
+            <div className="section-4">
+                <div className="section-4-header">
+                    <h2>Beaches in Penang</h2>
+                </div>
+                <div className="card-container">
+                    <div className="card">
+                        <img src="/batuferringhi.jpeg" alt="Batu Ferringhi" className="card-image" />
+                        <div className="card-content">
+                            <h3>Batu Ferringhi</h3>
+                            <p>A bustling beach destination known for its lively night markets and water sports.</p>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <img src="/tanjungbungah.jpg" alt="Tanjung Bungah" className="card-image" />
+                        <div className="card-content">
+                            <h3>Tanjung Bungah</h3>
+                            <p>A serene beach offering calm waters and a peaceful escape.</p>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <img src="/monkeybeach.jpg" alt="Monkey Beach" className="card-image" />
+                        <div className="card-content">
+                            <h3>Monkey Beach</h3>
+                            <p>A hidden gem in Penang National Park, perfect for nature lovers and adventurers.</p>
+                        </div>
+                    </div>
+                </div>
+                {/* View More Button */}
+                <div className="view-more-button-container">
+                    <button className="view-more-button">View More</button>
+                </div>
+            </div>
         </div>
     );
 };

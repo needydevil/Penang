@@ -24,7 +24,7 @@
 
 .tourist-spot-content {
     flex: 1;
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: 'Inter', Arial, sans-serif;
     text-align: left;
     color: #333;
     max-width: 450px;
@@ -76,21 +76,21 @@
     transform: translateX(5px);
 }
 
-/* Section 3 Styles */
-.section-3 {
+/* Section Styles */
+.section-3, .section-4 {
     background-color: #f2f8ff;
-    padding: 30px 30px; /* Enhanced padding for larger background */
-    border-radius: 20px; /* Smoother rounded corners */
-    margin: 40px auto; /* Spacing around the section */
-    max-width: 1200px; /* Adjusted width for a spacious layout */
+    padding: 40px 30px;
+    border-radius: 20px;
+    margin: 40px auto;
+    max-width: 1200px;
 }
 
-.section-3-header {
+.section-3-header, .section-4-header {
     margin-bottom: 30px;
 }
 
-.section-3-header h2 {
-    font-family: 'Inter', sans-serif; /* Use Poppins for the title */
+.section-3-header h2, .section-4-header h2 {
+    font-family: 'Inter', sans-serif;
     font-size: 36px;
     font-weight: 900;
     text-align: left;
@@ -109,7 +109,7 @@
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    width: 350px; /* Uniform width for all cards */
+    width: 350px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -123,8 +123,8 @@
 
 .card img {
     width: 100%;
-    height: 250px; /* Consistent height for all images */
-    object-fit: cover; /* Ensures the images are scaled proportionally */
+    height: 250px;
+    object-fit: cover;
 }
 
 .card-content {
@@ -147,13 +147,6 @@
     margin: 0;
 }
 
-.card-content .location {
-    font-size: 12px;
-    color: #777;
-    text-transform: uppercase;
-    margin: 5px 0 10px;
-}
-
 .card-content .read-more {
     font-size: 14px;
     color: #0066cc;
@@ -170,25 +163,25 @@
 
 .view-more-button-container {
     display: flex;
-    justify-content: flex-end; /* Align button to the right */
-    margin-top: 20px; /* Add space above the button */
-    padding-right: 20px; /* Space from the right edge */
+    justify-content: flex-end;
+    margin-top: 20px;
+    padding-right: 20px;
 }
 
 .view-more-button {
-    background-color: transparent; /* Transparent background */
-    color: #000; /* Black text */
-    font-size: 16px; /* Font size */
-    padding: 10px 20px; /* Padding for button */
-    border: 1px solid #ccc; /* Light border */
-    border-radius: 20px; /* Rounded corners for pill-like design */
-    cursor: pointer; /* Pointer cursor on hover */
-    font-weight: bold; /* Bold text */
-    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+    background-color: transparent;
+    color: #000;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
 
 .view-more-button:hover {
-    background-color: #0044cc; /* Light grey background on hover */
-    border-color: #0044cc; /* Darker border on hover */
-    color: #fff; /* Slightly darker text on hover */
+    background-color: #0044cc;
+    border-color: #0044cc;
+    color: #fff;
 }

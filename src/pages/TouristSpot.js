@@ -29,7 +29,7 @@ const TouristSpot = () => {
             <VisitPlaces />
 
             {/* Section 3: Georgetown Highlights */}
-            <div className="section">
+            <div id="georgetown-section" className="section">
                 <div className="section-header">
                     <h2>Georgetown</h2>
                 </div>
@@ -62,7 +62,7 @@ const TouristSpot = () => {
             </div>
 
             {/* Section 4: Beaches */}
-            <div className="section">
+            <div id="beaches-section" className="section">
                 <div className="section-header">
                     <h2>Beaches</h2>
                 </div>
@@ -95,7 +95,7 @@ const TouristSpot = () => {
             </div>
 
             {/* Section 5: Culture & Religious Sites */}
-            <div className="section">
+            <div id="cultural-section" className="section">
                 <div className="section-header">
                     <h2>Culture & Religious Sites</h2>
                 </div>
@@ -128,7 +128,7 @@ const TouristSpot = () => {
             </div>
 
             {/* Section 6: Nature */}
-            <div className="section">
+            <div id="nature-section" className="section">
                 <div className="section-header">
                     <h2>Nature</h2>
                 </div>
@@ -161,7 +161,7 @@ const TouristSpot = () => {
             </div>
 
             {/* Section 7: Museums & Entertainment */}
-            <div className="section">
+            <div id="museums-section" className="section">
                 <div className="section-header">
                     <h2>Museums & Entertainment</h2>
                 </div>

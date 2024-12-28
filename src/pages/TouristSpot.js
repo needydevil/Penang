@@ -1,15 +1,16 @@
 import React from 'react';
 import './TouristSpot.css';
-import VisitPlaces from '../components/VisitPlaces'; // Ensure the correct path to VisitPlaces.js
+import VisitPlaces from '../components/VisitPlaces';
 
 const TouristSpot = () => {
     return (
         <div className="tourist-spot-page">
+            {/* Section 1: Main Tourist Spot */}
             <div className="tourist-spot-container">
                 <div className="tourist-spot-image-container">
                     <img
                         className="tourist-spot-image"
-                        src="/tourist-spot2.png" // Ensure the path is correct
+                        src="/tourist-spot2.png"
                         alt="Penang Street"
                     />
                 </div>
@@ -25,8 +26,43 @@ const TouristSpot = () => {
                     </button>
                 </div>
             </div>
-            {/* Visit Places Section */}
+
+            {/* Section 2: Visit Places */}
             <VisitPlaces />
+
+            {/* Section 3: Georgetown Highlights */}
+            <div className="section-3">
+                <div className="section-3-header">
+                    <h2>Georgetown</h2>
+                </div>
+                <div className="card-container">
+                    <div className="card">
+                        <img src="/penangstreet.jpg" alt="Penang Street Art" className="card-image" />
+                        <div className="card-content">
+                            <h3>Cheong Fatt Tze Mansion</h3>
+                            <p>The iconic Blue Mansion of Georgetown offering cultural tours and luxurious stays.</p>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <img src="/peranakanmansion.jpg" alt="Pinang Peranakan Mansion" className="card-image" />
+                        <div className="card-content">
+                            <h3>Pinang Peranakan Mansion</h3>
+                            <p>A museum showcasing the rich history and heritage of the Peranakans in Penang.</p>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <img src="/cheongfatttzemansion.jpg" alt="Cheong Fatt Tze Mansion" className="card-image" />
+                        <div className="card-content">
+                            <h3>Kek Lok Si Temple</h3>
+                            <p>The largest Buddhist temple in Malaysia, nestled on the hillside.</p>
+                        </div>
+                    </div>
+                </div>
+                {/* View More Button */}
+                <div className="view-more-button-container">
+                    <button className="view-more-button">View More</button>
+                </div>
+            </div>
         </div>
     );
 };

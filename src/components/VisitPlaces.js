@@ -13,7 +13,7 @@ const VisitPlaces = () => {
     return (
         <div className="visit-places-container">
             <h2>Visit Places</h2>
-            <p>Discover the charm and attractions of these iconic places.</p>
+            <p>Discover the charm and attractions of these iconic places in Penang.</p>
             <div className="places-buttons-container">
                 {options.map((option, index) => (
                     <button key={index} className="place-button">

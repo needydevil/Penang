@@ -1,23 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 .tourist-spot-container {
     display: flex;
-    align-items: center; /* Vertically centers the content */
-    justify-content: space-between; /* Adds space between the image and content */
-    gap: 40px; /* Space between the image and text */
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
     margin: 20px auto;
-    max-width: 1200px; /* Center and limit width */
+    max-width: 1200px;
     padding: 10px;
 }
 
 .tourist-spot-image-container {
-    flex-shrink: 0; /* Prevent the image from resizing */
-    margin-right: 20px; /* Add space to the right of the image */
+    flex-shrink: 0;
+    margin-right: 20px;
 }
 
 .tourist-spot-image {
-    width: 650px; /* Fixed width for the image */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Optional: Rounded corners */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 650px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .tourist-spot-content {
@@ -25,14 +27,13 @@
     font-family: 'Roboto', Arial, sans-serif;
     text-align: left;
     color: #333;
-    display: block; /* Ensure block layout */
     max-width: 450px;
 }
 
 .tourist-spot-content h1 {
     font-size: 28px;
     margin-bottom: 10px;
-    color: #0044cc; /* Blue heading */
+    color: #0044cc;
 }
 
 .tourist-spot-content p {
@@ -43,35 +44,151 @@
 }
 
 .start-discovering-button {
-    background-color: #6c63ff; /* Button background color */
-    color: white; /* Button text color */
-    font-size: 16px; /* Adjusted font size */
-    padding: 10px 22px; /* Padding for a balanced button */
-    border: none; /* Remove borders */
-    border-radius: 6px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    margin-top: 20px; /* Space above the button */
-    font-weight: bold; /* Bold text */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
-    display: inline-flex; /* Align text and arrow properly */
-    align-items: center; /* Vertically center text and arrow */
-    justify-content: center; /* Center align content */
-    gap: 8px; /* Space between text and arrow */
-    width: auto; /* Adjust width to content size */
-    text-align: center; /* Center align text */
+    background-color: #6c63ff;
+    color: white;
+    font-size: 16px;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .start-discovering-button::after {
-    content: '➔'; /* Add an arrow */
-    font-size: 16px; /* Match the font size of the text */
-    transition: transform 0.3s ease; /* Smooth hover animation for arrow */
+    content: '➔';
+    font-size: 16px;
+    transition: transform 0.3s ease;
 }
 
 .start-discovering-button:hover {
-    background-color: #574ed9; /* Slightly darker blue on hover */
-    transform: translateY(-2px); /* Subtle upward movement on hover */
+    background-color: #574ed9;
+    transform: translateY(-2px);
 }
 
 .start-discovering-button:hover::after {
-    transform: translateX(5px); /* Arrow slides to the right on hover */
+    transform: translateX(5px);
+}
+
+/* Section 3 Styles */
+.section-3 {
+    background-color: #f2f8ff;
+    padding: 30px 30px; /* Enhanced padding for larger background */
+    border-radius: 20px; /* Smoother rounded corners */
+    margin: 40px auto; /* Spacing around the section */
+    max-width: 1200px; /* Adjusted width for a spacious layout */
+}
+
+.section-3-header {
+    margin-bottom: 30px;
+}
+
+.section-3-header h2 {
+    font-family: 'Inter', sans-serif; /* Use Poppins for the title */
+    font-size: 36px;
+    font-weight: 900;
+    text-align: left;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    width: 350px; /* Uniform width for all cards */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 250px; /* Consistent height for all images */
+    object-fit: cover; /* Ensures the images are scaled proportionally */
+}
+
+.card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-content h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+}
+
+.card-content .location {
+    font-size: 12px;
+    color: #777;
+    text-transform: uppercase;
+    margin: 5px 0 10px;
+}
+
+.card-content .read-more {
+    font-size: 14px;
+    color: #0066cc;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10px;
+    align-self: flex-start;
+    transition: color 0.3s ease;
+}
+
+.card-content .read-more:hover {
+    color: #0044cc;
+}
+
+.view-more-button-container {
+    display: flex;
+    justify-content: flex-end; /* Align button to the right */
+    margin-top: 20px; /* Add space above the button */
+    padding-right: 20px; /* Space from the right edge */
+}
+
+.view-more-button {
+    background-color: transparent; /* Transparent background */
+    color: #000; /* Black text */
+    font-size: 16px; /* Font size */
+    padding: 10px 20px; /* Padding for button */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 20px; /* Rounded corners for pill-like design */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+.view-more-button:hover {
+    background-color: #0044cc; /* Light grey background on hover */
+    border-color: #0044cc; /* Darker border on hover */
+    color: #fff; /* Slightly darker text on hover */
 }

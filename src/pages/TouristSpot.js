@@ -39,8 +39,8 @@ const TouristSpot = () => {
                     <div className="card">
                         <img src="/penangstreet.jpg" alt="Penang Street Art" className="card-image" />
                         <div className="card-content">
-                            <h3>Cheong Fatt Tze Mansion</h3>
-                            <p>The iconic Blue Mansion of Georgetown offering cultural tours and luxurious stays.</p>
+                            <h3>Penang Street Art</h3>
+                            <p>Streets that breathe life into walls, narrating captivating cultural stories through vibrant murals.</p>
                         </div>
                     </div>
                     <div className="card">
@@ -53,8 +53,8 @@ const TouristSpot = () => {
                     <div className="card">
                         <img src="/cheongfatttzemansion.jpg" alt="Cheong Fatt Tze Mansion" className="card-image" />
                         <div className="card-content">
-                            <h3>Kek Lok Si Temple</h3>
-                            <p>The largest Buddhist temple in Malaysia, nestled on the hillside.</p>
+                            <h3>Cheong Fatt Tze Mansion</h3>
+                            <p>The iconic Blue Mansion of Georgetown offering cultural tours and luxurious stays.</p>
                         </div>
                     </div>
                 </div>

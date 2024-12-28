@@ -141,7 +141,14 @@ const TouristSpot = () => {
                         </div>
                     </div>
                     <div className="card">
-                        <img src="/botanicalgarden.jpg" alt="Penang Botanical Gardens" className="card-image" />
+                        <img src="/penangnationalpark.jpg" alt="Penang National Park" className="card-image" />
+                        <div className="card-content">
+                            <h3>Penang National Park</h3>
+                            <p>A lush haven of biodiversity, Penang National Park features scenic trails, pristine beaches, and unique ecosystems perfect for nature lovers.</p>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <img src="/botanicalgarden.jpeg" alt="Penang Botanical Gardens" className="card-image" />
                         <div className="card-content">
                             <h3>Penang Botanical Gardens</h3>
                             <p>A serene garden boasting lush greenery, flowers, and natural waterfalls.</p>
@@ -160,14 +167,21 @@ const TouristSpot = () => {
                 </div>
                 <div className="card-container">
                     <div className="card">
-                        <img src="/penangmuseum.jpg" alt="Penang State Museum" className="card-image" />
+                        <img src="/penangstatemuseum.jpeg" alt="Penang State Museum" className="card-image" />
                         <div className="card-content">
                             <h3>Penang State Museum</h3>
                             <p>Explore Penang's rich history and culture through engaging exhibits.</p>
                         </div>
                     </div>
                     <div className="card">
-                        <img src="/wonderfoodmuseum.jpg" alt="Wonderfood Museum" className="card-image" />
+                        <img src="/penangwarmuseum.jpg" alt="Penang War Museum" className="card-image" />
+                        <div className="card-content">
+                            <h3>Penang War Museum</h3>
+                            <p>A historic fortress turned museum, Penang War Museum offers a glimpse into Malaysia's wartime past with its underground tunnels and preserved artifacts.</p>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <img src="/wonderfood.jpeg" alt="Wonderfood Museum" className="card-image" />
                         <div className="card-content">
                             <h3>Wonderfood Museum</h3>
                             <p>A unique museum showcasing giant replicas of local delicacies and food culture.</p>

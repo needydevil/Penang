@@ -21,9 +21,7 @@ const TouristSpot = () => {
                         iconic heritage sites, and ancient streets. This destination captures the essence of tradition
                         while welcoming visitors with modern attractions, making it a must-visit location.
                     </p>
-                    <button className="start-discovering-button">
-                        Start Discovering
-                    </button>
+                    <button className="start-discovering-button">Start Discovering</button>
                 </div>
             </div>
 
@@ -31,8 +29,8 @@ const TouristSpot = () => {
             <VisitPlaces />
 
             {/* Section 3: Georgetown Highlights */}
-            <div className="section-3">
-                <div className="section-3-header">
+            <div className="section">
+                <div className="section-header">
                     <h2>Georgetown</h2>
                 </div>
                 <div className="card-container">
@@ -58,41 +56,124 @@ const TouristSpot = () => {
                         </div>
                     </div>
                 </div>
-                {/* View More Button */}
                 <div className="view-more-button-container">
                     <button className="view-more-button">View More</button>
                 </div>
             </div>
 
-            {/* Section 4: Beaches in Penang */}
-            <div className="section-4">
-                <div className="section-4-header">
-                    <h2>Beaches in Penang</h2>
+            {/* Section 4: Beaches */}
+            <div className="section">
+                <div className="section-header">
+                    <h2>Beaches</h2>
                 </div>
                 <div className="card-container">
                     <div className="card">
                         <img src="/batuferringhi.jpeg" alt="Batu Ferringhi" className="card-image" />
                         <div className="card-content">
                             <h3>Batu Ferringhi</h3>
-                            <p>A bustling beach destination known for its lively night markets and water sports.</p>
+                            <p>A popular beach destination offering water sports, night markets, and scenic coastal views.</p>
                         </div>
                     </div>
                     <div className="card">
-                        <img src="/tanjungbungah.jpg" alt="Tanjung Bungah" className="card-image" />
+                        <img src="/tanjungbungah.jpeg" alt="Tanjung Bungah" className="card-image" />
                         <div className="card-content">
                             <h3>Tanjung Bungah</h3>
-                            <p>A serene beach offering calm waters and a peaceful escape.</p>
+                            <p>A serene beach area perfect for relaxation and family picnics.</p>
                         </div>
                     </div>
                     <div className="card">
                         <img src="/monkeybeach.jpg" alt="Monkey Beach" className="card-image" />
                         <div className="card-content">
                             <h3>Monkey Beach</h3>
-                            <p>A hidden gem in Penang National Park, perfect for nature lovers and adventurers.</p>
+                            <p>A secluded gem known for its crystal-clear waters and hiking trails.</p>
                         </div>
                     </div>
                 </div>
-                {/* View More Button */}
+                <div className="view-more-button-container">
+                    <button className="view-more-button">View More</button>
+                </div>
+            </div>
+
+            {/* Section 5: Culture & Religious Sites */}
+            <div className="section">
+                <div className="section-header">
+                    <h2>Culture & Religious Sites</h2>
+                </div>
+                <div className="card-container">
+                    <div className="card">
+                        <img src="/kekloksitemple.jpeg" alt="Kek Lok Si Temple" className="card-image" />
+                        <div className="card-content">
+                            <h3>Kek Lok Si Temple</h3>
+                            <p>The largest Buddhist temple in Malaysia, nestled on the hillside.</p>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <img src="/kapitankeling.jpeg" alt="Kapitan Keling Mosque" className="card-image" />
+                        <div className="card-content">
+                            <h3>Kapitan Keling Mosque</h3>
+                            <p>An iconic mosque with stunning architecture representing Penang's Muslim heritage.</p>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <img src="/khookongsi.jpeg" alt="Khoo Kongsi" className="card-image" />
+                        <div className="card-content">
+                            <h3>Khoo Kongsi</h3>
+                            <p>A magnificent clanhouse showcasing intricate Chinese architecture and rich history.</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="view-more-button-container">
+                    <button className="view-more-button">View More</button>
+                </div>
+            </div>
+
+            {/* Section 6: Nature */}
+            <div className="section">
+                <div className="section-header">
+                    <h2>Nature</h2>
+                </div>
+                <div className="card-container">
+                    <div className="card">
+                        <img src="/penanghill.jpg" alt="Penang Hill" className="card-image" />
+                        <div className="card-content">
+                            <h3>Penang Hill</h3>
+                            <p>Breathtaking panoramic views and cool weather await you atop Penang Hill.</p>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <img src="/botanicalgarden.jpg" alt="Penang Botanical Gardens" className="card-image" />
+                        <div className="card-content">
+                            <h3>Penang Botanical Gardens</h3>
+                            <p>A serene garden boasting lush greenery, flowers, and natural waterfalls.</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="view-more-button-container">
+                    <button className="view-more-button">View More</button>
+                </div>
+            </div>
+
+            {/* Section 7: Museums & Entertainment */}
+            <div className="section">
+                <div className="section-header">
+                    <h2>Museums & Entertainment</h2>
+                </div>
+                <div className="card-container">
+                    <div className="card">
+                        <img src="/penangmuseum.jpg" alt="Penang State Museum" className="card-image" />
+                        <div className="card-content">
+                            <h3>Penang State Museum</h3>
+                            <p>Explore Penang's rich history and culture through engaging exhibits.</p>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <img src="/wonderfoodmuseum.jpg" alt="Wonderfood Museum" className="card-image" />
+                        <div className="card-content">
+                            <h3>Wonderfood Museum</h3>
+                            <p>A unique museum showcasing giant replicas of local delicacies and food culture.</p>
+                        </div>
+                    </div>
+                </div>
                 <div className="view-more-button-container">
                     <button className="view-more-button">View More</button>
                 </div>

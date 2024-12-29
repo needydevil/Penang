@@ -1,7 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './About.css';
 
 const About = () => {
+    // State for the carousel
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    // Array of images for the carousel
+    const images = [
+        "/hotel1.png",
+    ];
+
+    // Function to go to the previous image
+    const prevImage = () => {
+        setCurrentIndex((prevIndex) =>
+            prevIndex === 0 ? images.length - 1 : prevIndex - 1
+        );
+    };
+
+    // Function to go to the next image
+    const nextImage = () => {
+        setCurrentIndex((prevIndex) =>
+            prevIndex === images.length - 1 ? 0 : prevIndex + 1
+        );
+    };
+
     return (
         <div className="about-penang-page">
             <div className='about'>
@@ -17,7 +39,7 @@ const About = () => {
             </div>
 
             <div className="aboutPage-section">
-                <div class="title-container">
+                <div className="title-container">
                     <span className="line"></span>
                     <span className="symbol">◊</span>
                     <span className="line"></span>
@@ -29,9 +51,18 @@ const About = () => {
 
                 <div className='section-image'>
                     <img
-                        src="/hotel1.png"
-                        alt="Hotel Example 1"
+                        src={images[currentIndex]}
+                        alt={`Hotel Example ${currentIndex + 1}`}
                     />
+                </div>
+
+                <div className="carousel">
+                    <button className="carousel-button prev" onClick={prevImage}>
+                        &#10094;
+                    </button>
+                    <button className="carousel-button next" onClick={nextImage}>
+                        &#10095;
+                    </button>
                 </div>
 
                 <div className="view-more-button-container">

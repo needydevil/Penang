@@ -1,0 +1,41 @@
+.about {
+    display: flex;
+    /* Enables Flexbox layout */
+    align-items: center;
+    /* Aligns items vertically */
+    gap: 40px;
+    /* Adds space between the image and text */
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 10px;
+}
+
+.about-png-image {
+    width: 600px;
+    height: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+.about .aboutText {
+    flex: 1;
+    font-family: 'Inter', Arial, sans-serif;
+    text-align: left;
+    color: #333;
+    max-width: 600px;
+}
+
+.about .aboutText h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    color: #0044cc;
+}
+
+.about .aboutText p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-left: 50px;
+    text-align: justify;
+}

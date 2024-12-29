@@ -19,6 +19,7 @@ const App = () => {
         <Router>
             <Navbar />
             <Routes>
+                {/* Main Routes */}
                 <Route path="/about" element={<About />} />
                 <Route path="/tourist-spot" element={<TouristSpot />} />
                 <Route path="/food" element={<Food />} />
@@ -26,6 +27,13 @@ const App = () => {
                 <Route path="/hotels" element={<Hotels />} />
                 <Route path="/transportation" element={<Transportation />} />
                 <Route path="/weather" element={<Weather />} />
+
+                {/* Sub-routes for Tourist Spot Sections */}
+                <Route path="/tourist-spot/georgetown" element={<Georgetown />} />
+                <Route path="/tourist-spot/beaches" element={<Beaches />} />
+                <Route path="/tourist-spot/cultural" element={<Cultural />} />
+                <Route path="/tourist-spot/nature" element={<Nature />} />
+                <Route path="/tourist-spot/museum" element={<Museum />} />
             </Routes>
         </Router>
     );

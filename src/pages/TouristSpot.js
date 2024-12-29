@@ -59,7 +59,7 @@ const TouristSpot = () => {
                     </div>
                 </div>
                 <div className="view-more-button-container">
-                    <button className="view-more-button" onClick={() => navigate('/georgetown')}>
+                    <button className="view-more-button" onClick={() => navigate('/tourist-spot/georgetown')}>
                         View More
                     </button>
                 </div>
@@ -94,7 +94,7 @@ const TouristSpot = () => {
                     </div>
                 </div>
                 <div className="view-more-button-container">
-                    <button className="view-more-button" onClick={() => navigate('/beaches')}>
+                    <button className="view-more-button" onClick={() => navigate('/tourist-spot/beaches')}>
                         View More
                     </button>
                 </div>
@@ -129,7 +129,7 @@ const TouristSpot = () => {
                     </div>
                 </div>
                 <div className="view-more-button-container">
-                    <button className="view-more-button" onClick={() => navigate('/cultural')}>
+                    <button className="view-more-button" onClick={() => navigate('/tourist-spot/cultural')}>
                         View More
                     </button>
                 </div>
@@ -164,7 +164,7 @@ const TouristSpot = () => {
                     </div>
                 </div>
                 <div className="view-more-button-container">
-                    <button className="view-more-button" onClick={() => navigate('/nature')}>
+                    <button className="view-more-button" onClick={() => navigate('/tourist-spot/nature')}>
                         View More
                     </button>
                 </div>
@@ -199,7 +199,7 @@ const TouristSpot = () => {
                     </div>
                 </div>
                 <div className="view-more-button-container">
-                    <button className="view-more-button" onClick={() => navigate('/museum')}>
+                    <button className="view-more-button" onClick={() => navigate('/tourist-spot/museum')}>
                         View More
                     </button>
                 </div>

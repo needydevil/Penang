@@ -39,3 +39,49 @@
     margin-left: 50px;
     text-align: justify;
 }
+
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 30px 0;
+}
+
+.line {
+    flex-grow: 1;
+    /* Makes the line stretch */
+    height: 1px;
+    background-color: #000000;
+    max-width: 200px;
+    /* Adjust line length */
+}
+
+.symbol {
+    font-size: 16px;
+    color: #000000;
+}
+
+.title {
+    font-family: 'Times New Roman', serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #000000;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.section-image img {
+    max-width: 100%;
+    /* Ensures the image scales responsively */
+    height: auto;
+}
+
+.aboutPage-section {
+    position: relative;
+    /* Ensure position for scrolling adjustments */
+    background-color: #f2f8ff;
+    padding: 20px 30px 30px 30px;
+    border-radius: 20px;
+    margin: 60px auto;
+    max-width: 1200px;
+}

@@ -78,6 +78,8 @@
 
 /* Shared Section Styles */
 .section {
+    position: relative; /* Ensure position for scrolling adjustments */
+    scroll-margin-top: 80px; /* Adjust the scroll offset for sections */
     background-color: #f2f8ff;
     padding: 40px 30px;
     border-radius: 20px;

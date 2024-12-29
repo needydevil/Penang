@@ -8,6 +8,8 @@ const About = () => {
     // Array of images for the carousel
     const images = [
         "/hotel1.png",
+        "/hotel2.png",
+        "/hotel3.png",
     ];
 
     // Function to go to the previous image

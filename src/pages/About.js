@@ -16,6 +16,30 @@ const About = () => {
                 </div>
             </div>
 
+            <div className="aboutPage-section">
+                <div class="title-container">
+                    <span className="line"></span>
+                    <span className="symbol">◊</span>
+                    <span className="line"></span>
+                    <h1 className="title">HOTELS</h1>
+                    <span className="line"></span>
+                    <span className="symbol">◊</span>
+                    <span className="line"></span>
+                </div>
+
+                <div className='section-image'>
+                    <img
+                        src="/hotel1.png"
+                        alt="Hotel Example 1"
+                    />
+                </div>
+
+                <div className="view-more-button-container">
+                    <button className="view-more-button">
+                        View More
+                    </button>
+                </div>
+            </div>
         </div>
     );
 };

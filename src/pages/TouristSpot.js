@@ -1,8 +1,10 @@
 import React from 'react';
 import './TouristSpot.css';
+import { useNavigate } from 'react-router-dom';
 import VisitPlaces from '../components/VisitPlaces';
 
 const TouristSpot = () => {
+    const navigate = useNavigate();
     return (
         <div className="tourist-spot-page">
             {/* Section 1: Main Tourist Spot */}
@@ -57,7 +59,9 @@ const TouristSpot = () => {
                     </div>
                 </div>
                 <div className="view-more-button-container">
-                    <button className="view-more-button">View More</button>
+                    <button className="view-more-button" onClick={() => navigate('/georgetown')}>
+                        View More
+                    </button>
                 </div>
             </div>
 
@@ -90,7 +94,9 @@ const TouristSpot = () => {
                     </div>
                 </div>
                 <div className="view-more-button-container">
-                    <button className="view-more-button">View More</button>
+                    <button className="view-more-button" onClick={() => navigate('/beaches')}>
+                        View More
+                    </button>
                 </div>
             </div>
 
@@ -123,7 +129,9 @@ const TouristSpot = () => {
                     </div>
                 </div>
                 <div className="view-more-button-container">
-                    <button className="view-more-button">View More</button>
+                    <button className="view-more-button" onClick={() => navigate('/cultural')}>
+                        View More
+                    </button>
                 </div>
             </div>
 
@@ -156,7 +164,9 @@ const TouristSpot = () => {
                     </div>
                 </div>
                 <div className="view-more-button-container">
-                    <button className="view-more-button">View More</button>
+                    <button className="view-more-button" onClick={() => navigate('/nature')}>
+                        View More
+                    </button>
                 </div>
             </div>
 
@@ -189,7 +199,9 @@ const TouristSpot = () => {
                     </div>
                 </div>
                 <div className="view-more-button-container">
-                    <button className="view-more-button">View More</button>
+                    <button className="view-more-button" onClick={() => navigate('/museum')}>
+                        View More
+                    </button>
                 </div>
             </div>
         </div>

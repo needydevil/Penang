@@ -1,0 +1,88 @@
+/* Image container styling */
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    height: 600px; /* Automatically adjust based on the image aspect ratio */
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Image inside the container */
+.carousel-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+/* Caption overlay for images */
+.image-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 15px;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    z-index: 3;
+}
+
+/* Navigation buttons styling */
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 4;
+}
+
+.nav-button:hover {
+    background: rgba(0, 0, 0, 1);
+    transform: scale(1.2);
+}
+
+.prev-button {
+    left: 20px;
+}
+
+.next-button {
+    right: 20px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .image-container {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .nav-button {
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .image-caption {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+}

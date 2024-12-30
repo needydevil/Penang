@@ -1,0 +1,77 @@
+.nature-description {
+    font-family: 'Inter', sans-serif;
+    margin: 40px auto;
+    max-width: 900px;
+    line-height: 1.8;
+    color: #333;
+}
+
+.nature-description h2 {
+    font-size: 2.5rem;
+    color: #2a4d89; /* Dark blue for the title */
+    margin-bottom: 5px;
+}
+
+.nature-description p {
+    font-size: 1.1rem;
+    margin: 10px 0 20px;
+}
+
+.nature-location {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.nature-highlight {
+    color: #c0392b; /* Red highlight for key phrases */
+    font-weight: bold;
+}
+
+/* Nature Page Container */
+.nature-page {
+    font-family: 'Inter', sans-serif;
+    margin: 20px auto;
+    width: 90%;
+}
+
+/* Title Styling */
+.nature-title {
+    font-size: 42px;
+    font-weight: 700;
+    text-align: left;
+    margin: 20px 0;
+    color: #3366FF;
+    text-transform: uppercase;
+}
+
+/* Paragraph Container */
+.nature-paragraph {
+    margin: 20px 0;
+    line-height: 1.8;
+    font-size: 18px;
+    color: #555;
+    text-align: justify;
+}
+
+.nature-paragraph h2 {
+    font-size: 24px;
+    color: #444;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nature-title {
+        font-size: 28px;
+    }
+
+    .nature-paragraph {
+        font-size: 16px;
+    }
+
+    .beaches-description {
+        max-width: 95%; /* Reduced width for smaller screens */
+    }
+}

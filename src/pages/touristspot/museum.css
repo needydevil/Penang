@@ -1,0 +1,86 @@
+/* General Description Styling */
+.museum-description {
+    font-family: 'Inter', sans-serif;
+    margin: 40px auto;
+    max-width: 900px;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* Heading Styling */
+.museum-description h2 {
+    font-size: 2.5rem;
+    color: #1a73e8; /* Bright blue for museum headings */
+    margin-bottom: 10px;
+}
+
+/* Paragraph Styling */
+.museum-description p {
+    font-size: 1.15rem; /* Slightly larger font size */
+    margin: 10px 0 20px;
+}
+
+/* Specific Styles for Highlighted Text */
+.museum-highlight {
+    color: #d35400; /* Orange highlight for key phrases */
+    font-weight: bold;
+}
+
+/* Page Container */
+.museum-page {
+    font-family: 'Inter', sans-serif;
+    margin: 20px auto;
+    width: 90%;
+}
+
+/* Title Styling */
+.museum-title {
+    font-size: 42px;
+    font-weight: 700;
+    text-align: left; /* Left-aligned title */
+    margin: 30px 0;
+    color: #3366FF; /* Softer blue for the main title */
+    text-transform: uppercase;
+    letter-spacing: 1px; /* Slight spacing for elegance */
+}
+
+/* Paragraph Container */
+.museum-paragraph {
+    margin: 20px 0;
+    line-height: 1.8;
+    font-size: 18px;
+    color: #444; /* Darker text for better readability */
+    text-align: justify;
+}
+
+/* Paragraph Headings */
+.museum-paragraph h2 {
+    font-size: 26px; /* Larger heading for individual sections */
+    color: #2c3e50; /* Deep blue for section titles */
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+/* Carousel Wrapper */
+.carousel-wrapper {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive Design for Mobile Screens */
+@media (max-width: 768px) {
+    .museum-title {
+        font-size: 32px; /* Reduced size for smaller screens */
+    }
+
+    .museum-paragraph {
+        font-size: 16px; /* Adjusted for readability */
+    }
+
+    .museum-description {
+        max-width: 95%; /* Reduced width for smaller screens */
+    }
+}

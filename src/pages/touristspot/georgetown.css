@@ -70,4 +70,8 @@
     .georgetown-paragraph {
         font-size: 16px;
     }
+
+    .beaches-description {
+        max-width: 95%; /* Reduced width for smaller screens */
+    }
 }

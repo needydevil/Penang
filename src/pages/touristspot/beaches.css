@@ -1,0 +1,76 @@
+/* General Description Styling */
+.beaches-description {
+    font-family: 'Inter', sans-serif;
+    margin: 40px auto;
+    max-width: 900px;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* Heading Styling */
+.beaches-description h2 {
+    font-size: 2.5rem;
+    color: #2a4d89; /* Changed to a brighter blue for beaches */
+    margin-bottom: 5px;
+}
+
+/* Paragraph Styling */
+.beaches-description p {
+    font-size: 1.1rem; /* Slightly larger font size */
+    margin: 10px 0 20px;
+}
+
+/* Specific Styles for Highlighted Text */
+.beaches-highlight {
+    color: #c0392b; /* Orange highlight for key phrases */
+    font-weight: bold;
+}
+
+/* Page Container */
+.beaches-page {
+    font-family: 'Inter', sans-serif;
+    margin: 20px auto;
+    width: 90%;
+}
+
+/* Title Styling */
+.beaches-title {
+    font-size: 42px;
+    font-weight: 700;
+    text-align: left; /* Centered title for a balanced look */
+    margin: 20px 0;
+    color: #3366FF; /* Softer blue for the main title */
+    text-transform: uppercase;
+}
+
+/* Paragraph Container */
+.beaches-paragraph {
+    margin: 20px 0;
+    line-height: 1.8;
+    font-size: 18px;
+    color: #555; /* Darker text for better readability */
+    text-align: justify;
+}
+
+/* Paragraph Headings */
+.beaches-paragraph h2 {
+    font-size: 24px; /* Larger heading for individual sections */
+    color: #2c3e50; /* Deep blue for section titles */
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Responsive Design for Mobile Screens */
+@media (max-width: 768px) {
+    .beaches-title {
+        font-size: 28px; /* Reduced size for smaller screens */
+    }
+
+    .beaches-paragraph {
+        font-size: 16px; /* Adjusted for readability */
+    }
+
+    .beaches-description {
+        max-width: 95%; /* Reduced width for smaller screens */
+    }
+}

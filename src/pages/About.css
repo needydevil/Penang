@@ -86,28 +86,3 @@
     margin: 60px auto;
     max-width: 1200px;
 }
-
-.carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(5%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    border-radius: 20%;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 2;
-}
-
-.carousel-button.prev {
-    left: 30px;
-}
-
-.carousel-button.next {
-    right: 30px;
-}
-
-.carousel-button:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-}

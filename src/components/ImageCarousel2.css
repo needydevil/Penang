@@ -1,0 +1,37 @@
+.carousel-container {
+    position: relative;
+    /* Makes the container the reference point for absolute positioning */
+    display: inline-block;
+    /* Ensures the container wraps the image and buttons */
+}
+
+.carousel-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-20%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 20%;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.carousel-button.prev {
+    left: 0px;
+}
+
+.carousel-button.next {
+    right: 0px;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}

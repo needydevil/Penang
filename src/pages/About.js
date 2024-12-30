@@ -1,51 +1,20 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './About.css';
+import ImageCarousel2 from '../components/ImageCarousel2';
 
 const About = () => {
-    // State for the carousel in the HOTELS section
-    const [hotelIndex, setHotelIndex] = useState(0);
-
-    // State for the carousel in the TRANSPORTATION section
-    const [transportIndex, setTransportIndex] = useState(0);
-
     // Arrays of images for each section
     const hotelImages = [
-        "/hotel1.png",
-        "/hotel2.png",
-        "/hotel3.png",
+        { src: "/hotel1.png", alt: "Hotel Example 1" },
+        { src: "/hotel2.png", alt: "Hotel Example 2" },
+        { src: "/hotel3.png", alt: "Hotel Example 3" },
     ];
 
     const transportImages = [
-        "/transport1.png",
-        "/transport2.png",
-        "/transport3.png",
+        { src: "/transport1.png", alt: "Transportation Example 1" },
+        { src: "/transport2.png", alt: "Transportation Example 2" },
+        { src: "/transport3.png", alt: "Transportation Example 3" },
     ];
-
-    // Functions for the HOTELS section
-    const prevHotelImage = () => {
-        setHotelIndex((prevIndex) =>
-            prevIndex === 0 ? hotelImages.length - 1 : prevIndex - 1
-        );
-    };
-
-    const nextHotelImage = () => {
-        setHotelIndex((prevIndex) =>
-            prevIndex === hotelImages.length - 1 ? 0 : prevIndex + 1
-        );
-    };
-
-    // Functions for the TRANSPORTATION section
-    const prevTransportImage = () => {
-        setTransportIndex((prevIndex) =>
-            prevIndex === 0 ? transportImages.length - 1 : prevIndex - 1
-        );
-    };
-
-    const nextTransportImage = () => {
-        setTransportIndex((prevIndex) =>
-            prevIndex === transportImages.length - 1 ? 0 : prevIndex + 1
-        );
-    };
 
     return (
         <div className="about-penang-page">
@@ -73,21 +42,7 @@ const About = () => {
                     <span className="line"></span>
                 </div>
 
-                <div className='section-image'>
-                    <img
-                        src={hotelImages[hotelIndex]}
-                        alt={`Hotel Example ${hotelIndex + 1}`}
-                    />
-                </div>
-
-                <div className="carousel">
-                    <button className="carousel-button prev" onClick={prevHotelImage}>
-                        &#10094;
-                    </button>
-                    <button className="carousel-button next" onClick={nextHotelImage}>
-                        &#10095;
-                    </button>
-                </div>
+                <ImageCarousel2 images={hotelImages} />
 
                 <div className="view-more-button-container">
                     <button className="view-more-button">
@@ -108,21 +63,7 @@ const About = () => {
                     <span className="line"></span>
                 </div>
 
-                <div className='section-image'>
-                    <img
-                        src={transportImages[transportIndex]}
-                        alt={`Transportation Example ${transportIndex + 1}`}
-                    />
-                </div>
-
-                <div className="carousel">
-                    <button className="carousel-button prev" onClick={prevTransportImage}>
-                        &#10094;
-                    </button>
-                    <button className="carousel-button next" onClick={nextTransportImage}>
-                        &#10095;
-                    </button>
-                </div>
+                <ImageCarousel2 images={transportImages} />
 
                 <div className="view-more-button-container">
                     <button className="view-more-button">

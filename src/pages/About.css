@@ -46,6 +46,8 @@
     justify-content: center;
     gap: 10px;
     padding: 30px 0;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .line {
@@ -53,8 +55,6 @@
     /* Makes the line stretch */
     height: 1px;
     background-color: #000000;
-    max-width: 200px;
-    /* Adjust line length */
 }
 
 .symbol {
@@ -68,6 +68,7 @@
     font-weight: bold;
     color: #000000;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
 }
 
 .section-image img {
@@ -84,4 +85,29 @@
     border-radius: 20px;
     margin: 60px auto;
     max-width: 1200px;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(5%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 20%;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.carousel-button.prev {
+    left: 30px;
+}
+
+.carousel-button.next {
+    right: 30px;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
 }

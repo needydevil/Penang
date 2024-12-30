@@ -130,6 +130,32 @@ const About = () => {
                     </button>
                 </div>
             </div>
+
+            {/* WEATHER Section */}
+            <div className="aboutPage-section">
+                <div className="title-container">
+                    <span className="line"></span>
+                    <span className="symbol">◊</span>
+                    <span className="line"></span>
+                    <h1 className="title">WEATHER</h1>
+                    <span className="line"></span>
+                    <span className="symbol">◊</span>
+                    <span className="line"></span>
+                </div>
+
+                <div className='section-image'>
+                    <img
+                        src='/weather.png'
+                        alt='Weather Example'
+                    />
+                </div>
+
+                <div className="view-more-button-container">
+                    <button className="view-more-button">
+                        View More
+                    </button>
+                </div>
+            </div>
         </div>
     );
 };

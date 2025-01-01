@@ -16,7 +16,7 @@
     border-radius: 5px;
 }
 
-.hotel-description {
+.hotel-transportation-description {
     flex: 1;
     font-family: 'Inter', Arial, sans-serif;
     text-align: left;
@@ -24,7 +24,7 @@
     max-width: 900px;
 }
 
-.hotel-description h1 {
+.hotel-transportation-description h1 {
     margin: 0;
     /* Removes unnecessary margin */
     font-size: 28px;
@@ -33,7 +33,7 @@
     /* Reduces extra line height */
 }
 
-.hotel-description p {
+.hotel-transportation-description p {
     margin-top: 20px;
     /* Adds some space below the heading */
     font-size: 16px;

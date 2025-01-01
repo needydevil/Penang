@@ -45,7 +45,7 @@ const Hotels = () => {
                 <div className='hotel-image'>
                     <ImageCarousel2 images={campbellImages} />
                 </div>
-                <div className='hotel-description'>
+                <div className='hotel-transportation-description'>
                     <h1>Campbell House Penang</h1>
                     <p>
                         A luxury heritage-inspired boutique hotel located in the heart of George Town city, Penang. The hotel offers guests extraordinary staying experience from the heritage of Georgetown to the delicious treats of Penang.
@@ -65,7 +65,7 @@ const Hotels = () => {
                 <div className='hotel-image'>
                     <ImageCarousel2 images={cheongFattTzeImages} />
                 </div>
-                <div className='hotel-description'>
+                <div className='hotel-transportation-description'>
                     <h1>Cheong Fatt Tze - The Blue Mansion</h1>
                     <p>
                         The Blue Mansion skillfully combines modern comforts with vintage charm. Numerous facilities include a courtyard dining area, a charming terrace, and a fine dining experience at the Indigo restaurant.
@@ -85,7 +85,7 @@ const Hotels = () => {
                 <div className='hotel-image'>
                     <ImageCarousel2 images={BayviewImages} />
                 </div>
-                <div className='hotel-description'>
+                <div className='hotel-transportation-description'>
                     <h1>Bayview Beach Resort</h1>
                     <p>
                         Bayview Beach Resort Penang, located at Batu Ferringhi beach, offers a tropical escape with lush gardens, beachfront access, and activities like parasailing, jet-skiing, and spa treatments. Along with a gym, tennis courts, and flexible event spaces, the resort offers family-friendly facilities like kid-friendly pools, play areas, and babysitter services.
@@ -105,7 +105,7 @@ const Hotels = () => {
                 <div className='hotel-image'>
                     <ImageCarousel2 images={homptonImages} />
                 </div>
-                <div className='hotel-description'>
+                <div className='hotel-transportation-description'>
                     <h1>Hompton By The Beach Penang</h1>
                     <p>
                         Hompton By The Beach Penang, a 4-star hotel located along the Tanjong Tokong seafront in George Town, offers a home-like experience with attentive services and stunning views of the Andaman Sea.

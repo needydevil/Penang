@@ -1,0 +1,17 @@
+.transportation-page-section {
+    display: flex;
+    /* Enables Flexbox layout */
+    align-items: flex-start;
+    /* Aligns items vertically */
+    gap: 80px;
+    /* Adds space between the image and text */
+    margin: 50px 100px;
+    max-width: 2000px;
+}
+
+.transportation-image img {
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+}

@@ -17,6 +17,10 @@ const ImageCarousel2 = ({ images }) => {
         );
     };
 
+    const goToImage = (index) => {
+        setCurrentIndex(index);
+    };
+
     return (
         <div className="carousel-container">
             <img
@@ -29,6 +33,17 @@ const ImageCarousel2 = ({ images }) => {
             <button className="carousel-button next" onClick={nextImage}>
                 &#10095;
             </button>
+
+            {/* Slider Dots */}
+            <div className="slider-dots">
+                {images.map((_, index) => (
+                    <span
+                        key={index}
+                        className={`dot ${index === currentIndex ? 'active' : ''}`}
+                        onClick={() => goToImage(index)}
+                    ></span>
+                ))}
+            </div>
         </div>
     );
 };

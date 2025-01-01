@@ -35,3 +35,29 @@
 .carousel-button:hover {
     background-color: rgba(0, 0, 0, 0.7);
 }
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Ensures dots are centered vertically */
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: #a4a3a8;
+    transform: scale(0.4);
+    /* Slightly larger effect for active */
+    padding: 6px;
+}

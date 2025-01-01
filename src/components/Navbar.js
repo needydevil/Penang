@@ -20,40 +20,75 @@ const Navbar = () => {
                 {/* Navigation Links */}
                 <ul className="navbar-links">
                     <li className="dropdown">
-                        <NavLink to="/about" activeClassName="active">
+                        <NavLink
+                            to="/about"
+                            className={({ isActive }) =>
+                                isActive ? 'active' : undefined
+                            }
+                        >
                             About Penang
                         </NavLink>
                         {/* Dropdown menu */}
                         <ul className="dropdown-menu">
                             <li>
-                                <NavLink to="/hotels" activeClassName="active">
+                                <NavLink
+                                    to="/hotels"
+                                    className={({ isActive }) =>
+                                        isActive ? 'active' : undefined
+                                    }
+                                >
                                     Hotels
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to="/transportation" activeClassName="active">
+                                <NavLink
+                                    to="/transportation"
+                                    className={({ isActive }) =>
+                                        isActive ? 'active' : undefined
+                                    }
+                                >
                                     Transportation
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to="/weather" activeClassName="active">
+                                <NavLink
+                                    to="/weather"
+                                    className={({ isActive }) =>
+                                        isActive ? 'active' : undefined
+                                    }
+                                >
                                     Weather
                                 </NavLink>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <NavLink to="/tourist-spot" activeClassName="active">
+                        <NavLink
+                            to="/tourist-spot"
+                            className={({ isActive }) =>
+                                isActive ? 'active' : undefined
+                            }
+                        >
                             Tourist Spot
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/food" activeClassName="active">
+                        <NavLink
+                            to="/food"
+                            className={({ isActive }) =>
+                                isActive ? 'active' : undefined
+                            }
+                        >
                             Food
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/history" activeClassName="active">
+                        <NavLink
+                            to="/history"
+                            className={({ isActive }) =>
+                                isActive ? 'active' : undefined
+                            }
+                        >
                             Culture & History
                         </NavLink>
                     </li>

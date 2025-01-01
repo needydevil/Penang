@@ -62,12 +62,12 @@
 }
 
 .active {
-  font-weight: bold;
-  background-color: #8f9fe8; /* Add your desired background color */
-  color: white; /* Ensure text color contrasts well */
-  border-bottom: none; /* Optional: remove border-bottom if not needed */
-  padding: 6px 10px; /* Ensure padding matches other links */
-  border-radius: 10px; /* For smooth edges */
+    font-weight: bold;
+    background-color: #8f9fe8; /* Add your desired background color */
+    color: white; /* Ensure text color contrasts well */
+    border-bottom: none;
+    padding: 6px 10px; /* Ensure padding matches other links */
+    border-radius: 10px; /* For smooth edges */
 }
 
 /* Dropdown Menu */
@@ -82,12 +82,16 @@
   list-style: none;
   margin: 0;
   padding: 10px 0;
-  display: none; /* Initially hidden */
+  display: block; /* Keep it in flow for animation */
+  opacity: 0; /* Start hidden */
+  transform: translateY(-10px); /* Slide up a bit initially */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth animation */
   z-index: 2000;
 }
 
 .navbar-links li:hover .dropdown-menu {
-  display: block; /* Show dropdown menu on hover */
+  opacity: 1; /* Fully visible on hover */
+  transform: translateY(0); /* Reset position */
 }
 
 .dropdown-menu li {

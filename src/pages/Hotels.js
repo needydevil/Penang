@@ -91,7 +91,7 @@ const Hotels = () => {
                         Bayview Beach Resort Penang, located at Batu Ferringhi beach, offers a tropical escape with lush gardens, beachfront access, and activities like parasailing, jet-skiing, and spa treatments. Along with a gym, tennis courts, and flexible event spaces, the resort offers family-friendly facilities like kid-friendly pools, play areas, and babysitter services.
                     </p>
                     <p>
-                        Visitors can explore the Batu Ferringhi Night Market, which is only a short walk away, eat at La Veranda Coffeehouse or Marco Polo, or visit nearby attractions like Georgetown's UNESCO World Heritage sites, which are about a 35-minute drive (17 km) away, and the stunning Penang National Park, which is about 30 minutes (15 km) away.
+                        Visitors can explore the Batu Ferringhi Night Market, which is only a short walk away, eat at La Veranda Coffeehouse or Marco Polo, or visit nearby attractions like Georgetown's UNESCO World Heritage sites, which are about a 35-minute drive (17 km) away, and the stunning Penang National Park, which is about 10 minutes (5 km) away.
                     </p>
                     <p>
                         A restful stay is guaranteed with the large rooms, suites, and luxurious penthouse with a private rooftop pool.

@@ -58,12 +58,11 @@
 }
 
 .navbar-links a:hover {
-  background-color: #8f9fe8; /* Subtle hover effect */
+  background-color: #cacaca; /* Subtle hover effect */
 }
 
 .active {
     font-weight: bold;
-    background-color: #8f9fe8; /* Add your desired background color */
     color: white; /* Ensure text color contrasts well */
     border-bottom: none;
     padding: 6px 10px; /* Ensure padding matches other links */

@@ -14,7 +14,7 @@ const Transportation = () => {
     ];
 
     const waterTransportImages = [
-        { src: '/waterTransport1.png', alt: 'Water Transportation 1' },
+        { src: '/waterTransportn1.png', alt: 'Water Transportation 1' },
         { src: '/waterTransport2.png', alt: 'Water Transportation 2' },
         { src: '/waterTransport3.png', alt: 'Water Transportation 3' },
     ];

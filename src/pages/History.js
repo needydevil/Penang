@@ -5,10 +5,17 @@ const History = () => {
     const sliderRef = useRef(null);
     const [activeSlide, setActiveSlide] = useState(0); // State to track active slide
 
+    // Centralized slide data for scalability
+    const slides = [
+        { id: 0, src: "/Beach_Street.jpg", alt: "Beach Street", text: "Beach Street, or \"Lebuh Pantai,\" is one of Penang's oldest streets, established in the late 18th century as the island's commercial hub near its bustling port. It is renowned for its colonial-era architecture, blending British and Straits Chinese styles, and remains a vibrant financial and heritage district today." },
+        { id: 1, src: "/townhall.jpg", alt: "Town Hall", text: "The Penang Town Hall, completed in 1883, is one of George Town's most iconic colonial-era landmarks, showcasing British Palladian architectural design. Originally built as a social venue for the European elite, it now serves as a historic site and venue for cultural events in Penang." },
+        { id: 2, src: "/Port_of_penang.jpg", alt: "Port of Penang", text: "The Port of Penang, established in the late 18th century, played a crucial role as a strategic trade hub in Southeast Asia under British rule. Today, it remains a vital gateway for international maritime trade and a key contributor to Penang's economy." },
+    ];
+
     const handleSlideLeft = () => {
         if (sliderRef.current) {
             const slideWidth = sliderRef.current.offsetWidth;
-            const newActiveSlide = activeSlide === 0 ? 2 : activeSlide - 1; // Loop back to the last slide
+            const newActiveSlide = activeSlide === 0 ? slides.length - 1 : activeSlide - 1; // Loop back to the last slide
             sliderRef.current.scrollTo({
                 left: slideWidth * newActiveSlide,
                 behavior: 'smooth',
@@ -20,7 +27,7 @@ const History = () => {
     const handleSlideRight = () => {
         if (sliderRef.current) {
             const slideWidth = sliderRef.current.offsetWidth;
-            const newActiveSlide = activeSlide === 2 ? 0 : activeSlide + 1; // Loop back to the first slide
+            const newActiveSlide = activeSlide === slides.length - 1 ? 0 : activeSlide + 1; // Loop back to the first slide
             sliderRef.current.scrollTo({
                 left: slideWidth * newActiveSlide,
                 behavior: 'smooth',
@@ -39,6 +46,7 @@ const History = () => {
             setActiveSlide(index); // Update active slide
         }
     };
+
 
     return (
         <>
@@ -87,54 +95,47 @@ const History = () => {
                 </div>
             </section>
 
-            <section className="slider_container">
+           <section className="slider_container">
                 <div className="slider-wrapper">
                     <button
                         className="slider-button slider-button-left"
                         onClick={handleSlideLeft}
                     >
-                        &#8592; {/* Left Arrow */}
+                        <span className="material-icons">arrow_back</span>
                     </button>
+
                     <div className="slider" ref={sliderRef}>
-                        <img
-                            id="slide-1"
-                            src="/Beach_Street.jpg"
-                            alt="Beach Street"
-                        />
-                        <img
-                            id="slide-2"
-                            src="/townhall.jpg"
-                            alt="Town Hall"
-                        />
-                        <img
-                            id="slide-3"
-                            src="/Port_of_penang.jpg"
-                            alt="Port of Penang"
-                        />
+                        {slides.map((slide, index) => (
+                            <div key={slide.id} className="slide">
+                                <img src={slide.src} alt={slide.alt} />
+                                {activeSlide === index && (
+                                    <div className="slide-text">{slide.text}</div>
+                                )}
+                            </div>
+                        ))}
                     </div>
+
                     <button
                         className="slider-button slider-button-right"
                         onClick={handleSlideRight}
                     >
-                        &#8594; {/* Right Arrow */}
+                        <span className="material-icons">arrow_forward</span>
+                    </button>
+
+                    <button className='learn-more-button'>
+                        Learn more
                     </button>
                 </div>
+
                 <div className="slider-nav">
-                    <a
-                        href="#slide-1"
-                        className={activeSlide === 0 ? 'active-dot' : ''}
-                        onClick={() => handleDotClick(0)}
-                    ></a>
-                    <a
-                        href="#slide-2"
-                        className={activeSlide === 1 ? 'active-dot' : ''}
-                        onClick={() => handleDotClick(1)}
-                    ></a>
-                    <a
-                        href="#slide-3"
-                        className={activeSlide === 2 ? 'active-dot' : ''}
-                        onClick={() => handleDotClick(2)}
-                    ></a>
+                    {slides.map((_, index) => (
+                        <a
+                            key={index}
+                            href={`#slide-${index}`}
+                            className={activeSlide === index ? 'active-dot' : ''}
+                            onClick={() => handleDotClick(index)}
+                        ></a>
+                    ))}
                 </div>
             </section>
 

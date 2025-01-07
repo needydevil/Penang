@@ -74,13 +74,31 @@
 @media (max-width: 768px) {
     .museum-title {
         font-size: 32px; /* Reduced size for smaller screens */
+        text-align: center; /* Center-aligned title for mobile */
     }
 
     .museum-paragraph {
         font-size: 16px; /* Adjusted for readability */
+        text-align: left; /* Align text to left for better readability */
     }
 
     .museum-description {
         max-width: 95%; /* Reduced width for smaller screens */
+        margin: 20px; /* Adjusted margin for better mobile spacing */
+    }
+
+    .museum-page {
+        width: 100%; /* Full width for mobile devices */
+        padding: 0 10px; /* Reduced padding for smaller screens */
+    }
+
+    .museum-paragraph h2 {
+        font-size: 22px; /* Adjusted heading size for mobile */
+    }
+
+    /* Adjust carousel on small screens */
+    .carousel-wrapper {
+        flex-direction: column; /* Stack images vertically */
+        align-items: flex-start; /* Align carousel items to the left */
     }
 }

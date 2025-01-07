@@ -1,3 +1,4 @@
+/* General Description Styling */
 .nature-description {
     font-family: 'Inter', sans-serif;
     margin: 40px auto;
@@ -6,23 +7,20 @@
     color: #333;
 }
 
+/* Heading Styling */
 .nature-description h2 {
     font-size: 2.5rem;
     color: #2a4d89; /* Dark blue for the title */
     margin-bottom: 5px;
 }
 
+/* Paragraph Styling */
 .nature-description p {
     font-size: 1.1rem;
     margin: 10px 0 20px;
 }
 
-.nature-location {
-    font-style: italic;
-    color: #555;
-    margin-bottom: 15px;
-}
-
+/* Specific Styles for Highlighted Text */
 .nature-highlight {
     color: #c0392b; /* Red highlight for key phrases */
     font-weight: bold;
@@ -61,17 +59,29 @@
     font-weight: bold;
 }
 
-/* Responsive Design */
+/* Responsive Design for Mobile Screens */
 @media (max-width: 768px) {
     .nature-title {
-        font-size: 28px;
+        font-size: 28px; /* Reduced size for smaller screens */
+        text-align: center; /* Center the title */
     }
 
     .nature-paragraph {
-        font-size: 16px;
+        font-size: 16px; /* Adjusted for readability on smaller screens */
+        text-align: left; /* Align text to the left for better readability */
     }
 
-    .beaches-description {
+    .nature-description {
         max-width: 95%; /* Reduced width for smaller screens */
+        margin: 20px; /* Adjusted margins for better spacing */
+    }
+
+    .nature-page {
+        width: 100%; /* Full width for mobile devices */
+        padding: 0 10px; /* Reduced padding for better layout */
+    }
+
+    .nature-paragraph h2 {
+        font-size: 22px; /* Adjusted heading size for mobile */
     }
 }

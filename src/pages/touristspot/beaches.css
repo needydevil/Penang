@@ -62,15 +62,31 @@
 
 /* Responsive Design for Mobile Screens */
 @media (max-width: 768px) {
+    /* Adjust the main title size for smaller screens */
     .beaches-title {
         font-size: 28px; /* Reduced size for smaller screens */
+        text-align: center; /* Center the title on mobile for better aesthetics */
     }
 
+    /* Adjust paragraph font size for better readability on small screens */
     .beaches-paragraph {
         font-size: 16px; /* Adjusted for readability */
     }
 
+    /* Adjust description container for smaller screen widths */
     .beaches-description {
         max-width: 95%; /* Reduced width for smaller screens */
+        margin: 20px auto; /* Add margins to avoid edges */
+    }
+
+    /* Make the highlight color text more readable in smaller viewports */
+    .beaches-highlight {
+        font-size: 1.1rem; /* Adjust for readability */
+    }
+
+    /* Adjust paragraph headings for better mobile viewing */
+    .beaches-paragraph h2 {
+        font-size: 22px; /* Slightly smaller heading size for mobile */
+        margin-bottom: 12px; /* Reduced margin for compact view */
     }
 }

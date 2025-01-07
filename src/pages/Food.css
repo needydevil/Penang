@@ -1,0 +1,75 @@
+.food {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 10px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+  
+/* Hero Section Styling */
+.hero-section {
+    background-color: aqua;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 80px 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+  
+.hero-section .hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #0044cc;
+}
+  
+.hero-section .hero-text p {
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #000000;
+}
+  
+/* Food Section Styling */
+.food-section {
+    margin-bottom: 40px;
+}
+  
+.food-section .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+  
+.food-cards-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+  
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 40px 20px;
+    }
+  
+    .hero-section .hero-text h1 {
+        font-size: 2rem;
+    }
+  
+    .food-section .section-title {
+        font-size: 2rem;
+    }
+  
+    .food-cards-container {
+        gap: 15px;
+    }
+}
+  

@@ -85,9 +85,11 @@ const History = () => {
                 </div>
             </section>
 
-            <section>
+            <section className='slider-title-container' >
                 <div>
-                    <h2 className="history-cards-title">History of Penang</h2>
+                    <h2 className="history-slider-title">
+                        History of Penang
+                    </h2>
                 </div>
             </section>
 
@@ -149,9 +151,9 @@ const History = () => {
                         <img 
                             src="/wushi.jpg" 
                             alt="wushi" 
-                        />
-                    </div>
-                    <a href="#" className="history-card_link">
+                        />                   
+                    </div>                   
+                    <a href="/chinese-culture" className="history-card_link">
                         <div className="history-card__img--hover">
                             <img 
                                 src="/wushi.jpg" 
@@ -169,14 +171,14 @@ const History = () => {
                 <article className="history-card history-card--2">
                     <div className="history-card__img">
                         <img 
-                            src="/tarian_melayu.jpeg" 
+                            src="/ketupat.jpg" 
                             alt="tarian melayu" 
                         />
                     </div>
-                    <a href="#" className="history-card_link">
+                    <a href="/malay-culture" className="history-card_link">
                         <div className="history-card__img--hover">
                             <img 
-                                src="/tarian_melayu.jpeg" 
+                                src="/ketupat.jpg" 
                                 alt="Penang Street Art 1" 
                             />
                         </div>
@@ -195,7 +197,7 @@ const History = () => {
                             alt="Indian festival" 
                         />
                     </div>
-                    <a href="#" className="history-card_link">
+                    <a href="/indian-culture" className="history-card_link">
                         <div className="history-card__img--hover">
                             <img 
                                 src="/Indian_festival.png" 

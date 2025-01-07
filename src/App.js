@@ -13,6 +13,11 @@ import Hotels from './pages/Hotels';
 import Transportation from './pages/Transportation';
 import Weather from './pages/Weather';
 import Navbar from './components/Navbar';
+import ChineseCulture from './pages/HistoryCulture/ChineseCulture';
+import MalayCulture from './pages/HistoryCulture/MalayCulture';
+import IndianCulture from './pages/HistoryCulture/IndianCulture';
+
+
 
 const App = () => {
     return (
@@ -34,6 +39,10 @@ const App = () => {
                 <Route path="/tourist-spot/cultural" element={<Cultural />} />
                 <Route path="/tourist-spot/nature" element={<Nature />} />
                 <Route path="/tourist-spot/museum" element={<Museum />} />
+
+                <Route path="/chinese-culture" element={<ChineseCulture />} />
+                <Route path="/indian-culture" element={<IndianCulture />} />
+                <Route path="/malay-culture" element={<MalayCulture />} />
             </Routes>
         </Router>
     );

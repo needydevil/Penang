@@ -62,15 +62,31 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    /* Title adjustments for mobile screens */
     .cultural-title {
-        font-size: 28px;
+        font-size: 28px; /* Smaller title font size */
+        text-align: center; /* Center title on mobile */
     }
 
+    /* Adjust paragraph font size for better readability */
     .cultural-paragraph {
-        font-size: 16px;
+        font-size: 16px; /* Adjust font size for smaller screens */
     }
 
-    .beaches-description {
-        max-width: 95%; /* Reduced width for smaller screens */
+    /* Adjust the container's max width for mobile screens */
+    .cultural-description {
+        max-width: 95%; /* Allow more space for text */
+        margin: 20px auto; /* Center the description with appropriate margins */
+    }
+
+    /* Ensure the highlight text remains readable */
+    .cultural-highlight {
+        font-size: 1.1rem; /* Adjust font size for smaller screens */
+    }
+
+    /* Adjust paragraph headings size and spacing */
+    .cultural-paragraph h2 {
+        font-size: 22px; /* Smaller heading font size */
+        margin-bottom: 12px; /* Reduced space between sections */
     }
 }

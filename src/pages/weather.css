@@ -2,11 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Centers content horizontally */
     justify-content: center;
-    /* Centers content vertically */
     min-height: 100vh;
-    /* Ensures the container takes the full height of the viewport */
     box-sizing: border-box;
 }
 
@@ -19,34 +16,59 @@
 
 .weather-image img {
     width: 100%;
-    max-width: 1200px;
+    max-width: 100%; /* Adjusted to ensure responsiveness on mobile */
     height: auto;
     object-fit: cover;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 20px; /* Reduced margin for mobile */
+    margin-bottom: 20px; /* Reduced margin for mobile */
 }
 
 .weather-page-section {
-    max-width: 1200px;
+    max-width: 100%; /* Ensure section takes full width on mobile */
     text-align: justify;
-    /* Justifies the content text */
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Centers the entire section horizontally */
     margin-bottom: 20px;
+    padding: 0 15px; /* Added padding to prevent content from touching the edges */
 }
 
 .weather-description h1 {
     text-align: center;
-    /* Centers the title */
-    margin: 10px 0px 30px 0px;
+    margin: 10px 0px 20px 0px; /* Adjusted margin for smaller screens */
+    font-size: 24px; /* Adjusted font size for mobile */
 }
 
 .weather-description p {
     text-align: justify;
-    /* Justifies the paragraph content */
     margin: 10px 0;
     line-height: 1.6;
-    /* Improves readability */
+    font-size: 16px; /* Adjusted font size for readability on smaller screens */
+}
+
+/* Mobile-Specific Styles */
+@media (max-width: 768px) {
+    .weather-page {
+        padding: 20px; /* Added padding to prevent edges from being too close */
+    }
+
+    /* Adjust image size on mobile */
+    .weather-image img {
+        max-width: 100%; /* Ensure image doesn't overflow on small screens */
+    }
+
+    /* Adjust section content */
+    .weather-page-section {
+        padding: 0 20px; /* More padding on the sides for better spacing */
+    }
+
+    /* Adjust title size */
+    .weather-description h1 {
+        font-size: 20px; /* Smaller title size for mobile */
+    }
+
+    /* Adjust paragraph text */
+    .weather-description p {
+        font-size: 14px; /* Smaller font size for paragraphs on mobile */
+    }
 }

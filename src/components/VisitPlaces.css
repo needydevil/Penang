@@ -1,3 +1,4 @@
+/* Base Styles */
 .visit-places-container {
   text-align: center;
   margin: 10px auto;
@@ -62,4 +63,43 @@
   border-top: 1px solid #ddd;
   margin: 30px auto; /* Space above and below the line */
   width: 90%; /* Adjust width as needed */
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .visit-places-container {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .visit-places-container h2 {
+    font-size: 24px;
+  }
+
+  .visit-places-container p {
+    font-size: 14px;
+  }
+
+  .places-buttons-container {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 15px; /* Adjust button gap */
+  }
+
+  .place-button {
+    font-size: 16px; /* Slightly larger text for mobile */
+    padding: 10px 20px; /* Reduce padding */
+    width: 100%; /* Make buttons full-width */
+  }
+
+  .button-icon {
+    font-size: 20px; /* Adjust icon size */
+  }
+
+  .button-text {
+    font-size: 14px; /* Adjust text size */
+  }
+  
+  .divider-line {
+    width: 80%; /* Adjust divider line width for mobile */
+  }
 }

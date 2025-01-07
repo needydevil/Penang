@@ -1,159 +1,195 @@
 .navbar {
   background-color: white;
-  padding: 5px 20px; /* Compact padding for shorter navbar */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for better look */
+  padding: 5px 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: sticky; /* Navbar stays on top when scrolling */
+  position: sticky;
   top: 0;
   z-index: 1000;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  background-color: white;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  z-index: 2000;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-links li {
+  padding: 10px 20px;
+}
+
+.sidebar-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.sidebar-links a:hover {
+  background-color: #cacaca;
 }
 
 .navbar-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%; /* Ensures full width */
+  width: 100%;
 }
 
 .logo-container {
   display: flex;
   align-items: center;
-  gap: 10px; /* Space between logo image and text */
-  margin-left: 50px; /* Moves logo to the right */
+  gap: 10px;
+  margin-left: 50px;
 }
 
 .logo-container img {
-  height: 65px; /* Adjusted logo height for a balanced look */
+  height: 65px;
   width: auto;
-  display: block; /* Prevents inline styles affecting the image */
+  display: block;
 }
 
 .logo-container a {
-  text-decoration: none; /* Removes underline for logo link */
-  border-bottom: none; /* Ensures no border appears */
+  text-decoration: none;
+  border-bottom: none;
 }
 
 .navbar-links {
   list-style: none;
   display: flex;
-  gap: 20px; /* Adjusted spacing between navigation links */
+  gap: 20px;
   margin: 0;
   padding: 0;
 }
 
 .navbar-links li {
-  position: relative; /* Important for dropdown positioning */
+  position: relative;
 }
 
 .navbar-links a {
-  text-decoration: none; /* Remove underline */
+  text-decoration: none;
   color: rgb(0, 0, 0);
-  font-size: 16px; /* Slightly reduced font size for compact spacing */
-  padding: 6px 10px; /* Compact spacing for better fit */
+  font-size: 16px;
+  padding: 6px 10px;
   transition: color 0.3s, background-color 0.3s;
-  border-radius: 10px; /* Smooth edges */
-  border-bottom: none; /* Ensures no underline */
+  border-radius: 10px;
+  border-bottom: none;
 }
 
 .navbar-links a:hover {
-  background-color: #cacaca; /* Subtle hover effect */
+  background-color: #cacaca;
 }
 
 .active {
-    font-weight: bold;
-    color: white; /* Ensure text color contrasts well */
-    border-bottom: none;
-    padding: 6px 10px; /* Ensure padding matches other links */
-    border-radius: 10px; /* For smooth edges */
+  font-weight: bold;
+  color: white;
+  border-bottom: none;
+  padding: 6px 10px;
+  border-radius: 10px;
 }
 
 /* Dropdown Menu */
 .dropdown-menu {
   position: absolute;
-  top: 150%; /* Position directly below parent */
+  top: 150%;
   left: 0;
   background-color: white;
   border: 1px solid #ddd;
   border-radius: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Enhanced dropdown shadow */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   list-style: none;
   margin: 0;
   padding: 10px 0;
-  display: block; /* Keep it in flow for animation */
-  opacity: 0; /* Start hidden */
-  transform: translateY(-10px); /* Slide up a bit initially */
-  transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth animation */
+  display: block;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
   z-index: 2000;
 }
 
 .navbar-links li:hover .dropdown-menu {
-  opacity: 1; /* Fully visible on hover */
-  transform: translateY(0); /* Reset position */
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .dropdown-menu li {
-  padding: 6px 12px; /* Reduced padding for dropdown items */
+  padding: 6px 12px;
 }
 
 .dropdown-menu li a {
   text-decoration: none;
   color: black;
-  font-size: 14px; /* Reduced font size for compact dropdown */
+  font-size: 14px;
   display: block;
   transition: background-color 0.3s, color 0.3s;
-  border-radius: 5px; /* Consistent with the parent links */
+  border-radius: 5px;
 }
 
 .dropdown-menu li a:hover {
-  background-color: #f9f9f9; /* Consistent hover effect */
+  background-color: #f9f9f9;
 }
 
 /* Responsiveness */
 @media (max-width: 768px) {
   .navbar-container {
-    flex-direction: column;
-    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .menu-icon {
+    display: block;
   }
 
   .navbar-links {
-    flex-direction: column;
-    gap: 8px; /* Adjusted for better spacing on small screens */
-    width: 100%;
+    display: none;
   }
 
-  .dropdown-menu {
-    position: static; /* Align dropdown with parent on small screens */
-    box-shadow: none;
-    border: none;
-    padding: 0;
-  }
-
-  .navbar-links a {
-    padding: 8px 15px; /* Better spacing on small screens */
+  .sidebar-links a {
+    padding: 8px 15px;
   }
 }
 
 /* Adjustments for logo alignment */
 @media (max-width: 576px) {
   .logo-container {
-    justify-content: center;
-    margin-bottom: 5px; /* Adjust for smaller screens */
-    margin-left: 0; /* Center the logo */
+    margin-left: 0;
   }
+
   .logo-container img {
-    height: 50px; /* Slightly smaller logo for smaller screens */
+    height: 50px;
   }
 }
 
 /* Additional adjustments for hover and spacing */
 .navbar-links a:focus {
-  outline: none; /* Removes focus outline for cleaner look */
-  background-color: #f1f1f1; /* Subtle focus effect */
+  outline: none;
+  background-color: #f1f1f1;
 }
 
 .logo-container a:hover {
-  text-decoration: none; /* Prevent underline on hover */
-  border-bottom: none; /* Remove underline when focused */
+  text-decoration: none;
+  border-bottom: none;
 }

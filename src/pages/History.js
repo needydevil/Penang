@@ -3,36 +3,35 @@ import './history.css';
 
 const History = () => {
     const sliderRef = useRef(null);
-    const [activeSlide, setActiveSlide] = useState(0); // State to track active slide
+    const [activeSlide, setActiveSlide] = useState(0);
 
-    // Centralized slide data for scalability
     const slides = [
-        { id: 0, src: "/Beach_Street.jpg", alt: "Beach Street", text: "Beach Street, or \"Lebuh Pantai,\" is one of Penang's oldest streets, established in the late 18th century as the island's commercial hub near its bustling port. It is renowned for its colonial-era architecture, blending British and Straits Chinese styles, and remains a vibrant financial and heritage district today." },
-        { id: 1, src: "/townhall.jpg", alt: "Town Hall", text: "The Penang Town Hall, completed in 1883, is one of George Town's most iconic colonial-era landmarks, showcasing British Palladian architectural design. Originally built as a social venue for the European elite, it now serves as a historic site and venue for cultural events in Penang." },
-        { id: 2, src: "/Port_of_penang.jpg", alt: "Port of Penang", text: "The Port of Penang, established in the late 18th century, played a crucial role as a strategic trade hub in Southeast Asia under British rule. Today, it remains a vital gateway for international maritime trade and a key contributor to Penang's economy." },
+        { id: 0, src: "/Beach_Street.jpg", alt: "Beach Street", text: "Beach Street, or \"Lebuh Pantai,\" is one of Penang's oldest streets..." },
+        { id: 1, src: "/townhall.jpg", alt: "Town Hall", text: "The Penang Town Hall, completed in 1883, is one of George Town's most iconic colonial landmarks..." },
+        { id: 2, src: "/Port_of_penang.jpg", alt: "Port of Penang", text: "The Port of Penang, established in the late 18th century, played a crucial role as a strategic trade hub..." },
     ];
 
     const handleSlideLeft = () => {
         if (sliderRef.current) {
             const slideWidth = sliderRef.current.offsetWidth;
-            const newActiveSlide = activeSlide === 0 ? slides.length - 1 : activeSlide - 1; // Loop back to the last slide
+            const newActiveSlide = activeSlide === 0 ? slides.length - 1 : activeSlide - 1;
             sliderRef.current.scrollTo({
                 left: slideWidth * newActiveSlide,
                 behavior: 'smooth',
             });
-            setActiveSlide(newActiveSlide); // Update active slide
+            setActiveSlide(newActiveSlide);
         }
     };
 
     const handleSlideRight = () => {
         if (sliderRef.current) {
             const slideWidth = sliderRef.current.offsetWidth;
-            const newActiveSlide = activeSlide === slides.length - 1 ? 0 : activeSlide + 1; // Loop back to the first slide
+            const newActiveSlide = activeSlide === slides.length - 1 ? 0 : activeSlide + 1;
             sliderRef.current.scrollTo({
                 left: slideWidth * newActiveSlide,
                 behavior: 'smooth',
             });
-            setActiveSlide(newActiveSlide); // Update active slide
+            setActiveSlide(newActiveSlide);
         }
     };
 
@@ -43,10 +42,9 @@ const History = () => {
                 left: slideWidth * index,
                 behavior: 'smooth',
             });
-            setActiveSlide(index); // Update active slide
+            setActiveSlide(index);
         }
     };
-
 
     return (
         <>
@@ -95,7 +93,7 @@ const History = () => {
                 </div>
             </section>
 
-           <section className="slider_container">
+            <section className="slider_container">
                 <div className="slider-wrapper">
                     <button
                         className="slider-button slider-button-left"
@@ -160,7 +158,7 @@ const History = () => {
                             <img 
                                 src="/wushi.jpg" 
                                 alt="Penang Street Art 1" 
-                            />                            
+                            />
                         </div>
                     </a>
                     <div className="history-card__info">
@@ -175,20 +173,21 @@ const History = () => {
                         <img 
                             src="/ketupat.jpg" 
                             alt="tarian melayu" 
-                        />                   
+                        />
                     </div>
                     <a href="/malay-culture" className="history-card_link">
                         <div className="history-card__img--hover">
                             <img 
                                 src="/ketupat.jpg" 
                                 alt="Penang Street Art 1" 
-                            />                            
+                            />
                         </div>
                     </a>
                     <div className="history-card__info">
                         <span className="history-card__category">Malay</span>
                         <h3 className="history-card__title">Malay Culture</h3>
-                        <a className="history-card__description" title="description"> Lebih Lanjut </a>                    </div>
+                        <a className="history-card__description" title="description"> Lebih Lanjut </a>
+                    </div>
                 </article>
 
                 <article className="history-card history-card--3">
@@ -196,14 +195,14 @@ const History = () => {
                         <img 
                             src="/Indian_festival.png" 
                             alt="Indian festival" 
-                        />                   
+                        />
                     </div>
                     <a href="/indian-culture" className="history-card_link">
                         <div className="history-card__img--hover">
                             <img 
                                 src="/Indian_festival.png" 
                                 alt="Indian festival" 
-                            />                            
+                            />
                         </div>
                     </a>
                     <div className="history-card__info">

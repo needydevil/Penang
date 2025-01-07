@@ -6,23 +6,27 @@
     color: #333;
 }
 
+/* Title Styling */
 .georgetown-description h2 {
     font-size: 2.5rem;
     color: #2a4d89; /* Dark blue for the title */
     margin-bottom: 5px;
 }
 
+/* Paragraph Styling */
 .georgetown-description p {
     font-size: 1.1rem;
     margin: 10px 0 20px;
 }
 
+/* Location Styling */
 .georgetown-location {
     font-style: italic;
     color: #555;
     margin-bottom: 15px;
 }
 
+/* Highlighted Text */
 .georgetown-highlight {
     color: #c0392b; /* Red highlight for key phrases */
     font-weight: bold;
@@ -54,6 +58,7 @@
     text-align: justify;
 }
 
+/* Paragraph Headings */
 .georgetown-paragraph h2 {
     font-size: 24px;
     color: #444;
@@ -61,17 +66,33 @@
     font-weight: bold;
 }
 
-/* Responsive Design */
+/* Responsive Design for Mobile Screens */
 @media (max-width: 768px) {
     .georgetown-title {
-        font-size: 28px;
+        font-size: 28px; /* Adjusted font size for smaller screens */
+        text-align: center; /* Center align title for mobile */
     }
 
     .georgetown-paragraph {
-        font-size: 16px;
+        font-size: 16px; /* Reduced font size for readability on mobile */
+        text-align: left; /* Align text to the left for better readability */
     }
 
-    .beaches-description {
-        max-width: 95%; /* Reduced width for smaller screens */
+    .georgetown-description {
+        max-width: 95%; /* Increased width for smaller screens */
+        margin: 20px; /* Adjusted margin for mobile */
+    }
+
+    .georgetown-page {
+        width: 100%; /* Full width for mobile devices */
+        padding: 0 10px; /* Reduced padding for smaller screens */
+    }
+
+    .georgetown-location {
+        font-size: 14px; /* Slightly smaller font for location */
+    }
+
+    .georgetown-paragraph h2 {
+        font-size: 20px; /* Reduced heading size */
     }
 }

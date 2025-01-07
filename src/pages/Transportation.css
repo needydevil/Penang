@@ -1,17 +1,33 @@
 .transportation-page-section {
     display: flex;
-    /* Enables Flexbox layout */
-    align-items: flex-start;
-    /* Aligns items vertically */
-    gap: 80px;
-    /* Adds space between the image and text */
-    margin: 50px 100px;
-    max-width: 2000px;
+    flex-direction: column; /* Stack the content vertically on small screens */
+    align-items: center; /* Center align items horizontally */
+    gap: 40px; /* Adjust gap for smaller screens */
+    margin: 20px; /* Reduced margin for mobile */
+    max-width: 100%; /* Ensure the section doesn't exceed the screen width */
+    padding: 0 20px; /* Added padding for better spacing */
 }
 
 .transportation-image img {
-    width: 500px;
-    height: 400px;
+    width: 100%; /* Make the image responsive */
+    max-width: 500px; /* Ensure image doesn't become too large */
+    height: auto; /* Maintain aspect ratio */
     object-fit: cover;
     border-radius: 5px;
+    margin-bottom: 20px; /* Add space between image and text */
+}
+
+/* Mobile-Specific Styles */
+@media (max-width: 768px) {
+    .transportation-page-section {
+        flex-direction: column; /* Stack elements vertically on small screens */
+        align-items: center; /* Center-align items on smaller screens */
+        gap: 20px; /* Adjust gap between image and text */
+        margin: 20px; /* Reduced margin for mobile */
+    }
+
+    .transportation-image img {
+        width: 100%; /* Image takes full width on mobile */
+        height: auto; /* Maintain aspect ratio */
+    }
 }

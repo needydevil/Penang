@@ -8,7 +8,7 @@ import Cultural from './pages/touristspot/cultural';
 import Nature from './pages/touristspot/nature';
 import Museum from './pages/touristspot/museum';
 import Food from './pages/Food';
-import History from './pages/History';
+import HistoryCulture from './pages/HistoryCulture';
 import Hotels from './pages/Hotels';
 import Transportation from './pages/Transportation';
 import Weather from './pages/Weather';
@@ -28,7 +28,7 @@ const App = () => {
                 <Route path="/about" element={<About />} />
                 <Route path="/tourist-spot" element={<TouristSpot />} />
                 <Route path="/food" element={<Food />} />
-                <Route path="/history" element={<History />} />
+                <Route path="/history" element={<HistoryCulture />} />
                 <Route path="/hotels" element={<Hotels />} />
                 <Route path="/transportation" element={<Transportation />} />
                 <Route path="/weather" element={<Weather />} />

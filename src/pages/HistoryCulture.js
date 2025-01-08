@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
-import './history.css';
+import './HistoryCulture.css';
 
-const History = () => {
+const HistoryCulture = () => {
     const sliderRef = useRef(null);
     const [activeSlide, setActiveSlide] = useState(0);
 
@@ -216,4 +216,4 @@ const History = () => {
     );
 };
 
-export default History;
+export default HistoryCulture;

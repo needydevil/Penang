@@ -1,3 +1,4 @@
+/* Food card styling */
 .food-card {
     background-color: #fff;
     border-radius: 12px;
@@ -7,7 +8,8 @@
     display: flex;
     flex-direction: column;
     margin: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 .food-card:hover {
@@ -43,30 +45,149 @@
     margin-bottom: 12px;
 }
 
-/* Mobile Responsive */
+/* Overlay styling */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it appears above all other elements */
+    overflow: hidden; /* Prevent scrolling when overlay is active */
+}
+
+.overlay-content {
+    display: flex;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Overlay styling */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it appears above all other elements */
+    overflow: hidden; /* Prevent scrolling when overlay is active */
+    padding: 20px; /* Add padding for smaller screens */
+}
+
+.overlay-content {
+    display: flex;
+    flex-direction: row; /* Default: row layout for desktop */
+    background: white;
+    padding: 30px; /* Add more padding for better spacing */
+    border-radius: 15px; /* Make the corners more rounded */
+    width: 90%;
+    max-width: 1000px; /* Increased maximum width for desktop */
+    max-height: 90%; /* Ensure the overlay doesn’t overflow the screen */
+    overflow-y: auto; /* Add scrolling if content exceeds height */
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Consistent image styling in the overlay */
+.overlay-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 300px; /* Prevent the image from becoming too tall */
+}
+
+.overlay-img {
+    width: 100%;
+    max-width: 400px; /* Allow larger images on desktop */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Crop the image if necessary */
+    border-radius: 15px;
+}
+
+/* Content styling */
+.overlay-right {
+    flex: 2;
+    padding-left: 30px; /* Add spacing between the image and content */
+    font-size: 16px;
+}
+
+.overlay-right h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.overlay-right p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.close-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #FF6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.close-btn:hover {
+    background-color: #FF4500;
+}
+
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
-    .food-card {
-        width: 100%;
-        max-width: 90%;
-        margin: 10px auto;
-        border-radius: 10px;
+    .overlay-content {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center;
+        padding: 20px; /* Adjust padding for smaller screens */
     }
 
-    .food-card-img {
-        height: 200px;
+    .overlay-left {
+        margin-bottom: 20px; /* Add spacing between the image and text */
+        max-height: 250px; /* Adjust max height for mobile */
     }
 
-    .food-card-content {
-        padding: 18px;
+    .overlay-img {
+        max-width: 90%; /* Ensure the image doesn't overflow the screen */
+        max-height: 250px; /* Reduce height for smaller screens */
     }
 
-    .food-card-name {
-        font-size: 20px;
-        margin-bottom: 10px;
+    .overlay-right {
+        padding-left: 0;
+        text-align: center; /* Center align text for better readability */
     }
 
-    .food-card-description {
-        font-size: 13px;
-        margin-bottom: 10px;
+    .overlay-right h3 {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+
+    .overlay-right p {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .close-btn {
+        width: 100%; /* Make the button full width on mobile */
+        padding: 15px 0;
+        font-size: 18px; /* Increase font size for mobile */
     }
 }

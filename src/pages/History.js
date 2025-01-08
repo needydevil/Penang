@@ -71,7 +71,7 @@ const History = () => {
                         <p className="history-hero-description">
                             Look deep into culture, and you will understand everything better.
                         </p>
-                        <button className="history-hero-button">
+                        < button className="history-hero-button">
                             Get Started
                         </button>
                     </div>

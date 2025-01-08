@@ -1,5 +1,5 @@
 import React from 'react';
-import './ChineseCulture.css'; // Add a separate CSS file for styling
+import './Culture.css'; // Add a separate CSS file for styling
 
 const ChineseCulture = () => {
     const cardData = [
@@ -8,21 +8,21 @@ const ChineseCulture = () => {
             image: "/wushi.jpg",
             alt: "Wushi Lion Dance",
             title: "Lion Dance",
-            description: "The Lion Dance is a traditional Chinese performance that brings good luck and prosperity, especially during the Lunar New Year.",
+            description: "The Lion Dance is a traditional Chinese performance symbolizing good luck and prosperity, especially during the Lunar New Year. Performed by two dancers to the beats of drums, gongs, and cymbals, it mimics a lion’s movements to ward off evil spirits and attract fortune. With vibrant costumes, acrobatics, and expressive motions, the dance is also featured at weddings and events, blessing occasions with harmony and success.",
         },
         {
             id: 2,
-            image: "/wushi.jpg",
-            alt: "Chinese Calligraphy",
-            title: "Calligraphy",
-            description: "Chinese calligraphy is an ancient art form that showcases the beauty and cultural significance of Chinese characters.",
+            image: "/chinese_opera.jpg",
+            alt: "Chinese Opera",
+            title: "Chinese Opera",
+            description: "Chinese traditional opera is a centuries-old art form combining music, drama, dance, and acrobatics to tell stories of history and folklore. Known for its elaborate costumes, expressive makeup, and stylized performances, it features distinct regional styles like Peking and Cantonese Opera. Accompanied by traditional instruments, it remains a cherished cultural heritage, preserving tradition while captivating audiences.",
         },
         {
             id: 3,
-            image: "/wushi.jpg",
-            alt: "Chinese Cuisine",
-            title: "Cuisine",
-            description: "Experience the rich flavors of traditional Chinese dishes, from dumplings to roast duck and more.",
+            image: "/CNY.jpg",
+            alt: "Chinese New Year",
+            title: "Chinese New Year",
+            description: "Chinese New Year in Penang is a vibrant celebration of Chinese heritage, featuring colorful decorations, lion dances, firecrackers, and illuminated temples like Kek Lok Si. Families gather for reunion dinners with symbolic dishes, and offerings are made to honor ancestors. Highlights include the Penang CNY Cultural and Heritage Celebration, showcasing traditional performances, handicrafts, and street food, blending festive joy with the preservation of rich Chinese traditions.",
         },
     ];
 
@@ -45,5 +45,7 @@ const ChineseCulture = () => {
         </div>
     );
 };
+
+
 
 export default ChineseCulture;

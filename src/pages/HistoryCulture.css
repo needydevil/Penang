@@ -189,12 +189,18 @@
 
     .history-cards {
         flex-direction: column;
-        gap: 20px; /* Adjusted gap for better spacing */
+        gap: 50px; /* Adjusted gap for better spacing */
+        margin: 0 auto;
     }
 
     .history-card {
-        width: 100%;
+        width: 300px;
         margin-bottom: 20px; /* Added margin for better spacing */
+        margin: 0 auto;
+    }
+
+    .history-card__img{
+        max-width: auto;
     }
 
     .history-container1, .history-container2, .history-container3 {

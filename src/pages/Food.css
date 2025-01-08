@@ -1,75 +1,102 @@
+/* General Food Container Styling */
 .food {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    margin: 20px auto;
-    max-width: 1200px;
-    padding: 10px;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    margin: 10px auto;
+    padding: 20px;
 }
-  
+
 /* Hero Section Styling */
 .hero-section {
-    background-color: aqua;
+    background-image: url('/public/hero.jpg');
     background-size: cover;
     background-position: center;
-    text-align: center;
     color: white;
     padding: 80px 20px;
     border-radius: 10px;
-    margin-bottom: 40px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Position content at the bottom */
+    height: 60vh; /* Consistent height for the hero section */
+    text-align: center;
+    overflow: hidden;
 }
-  
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)); /* Smooth gradient overlay */
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.hero-section .hero-text {
+    position: relative; /* Ensure text is above the overlay */
+    z-index: 2;
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+}
+
 .hero-section .hero-text h1 {
-    font-size: 3rem;
-    margin-bottom: 15px;
-    color: #0044cc;
+    font-size: 3.5rem;
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    color: white;
 }
-  
+
 .hero-section .hero-text p {
     font-size: 1.25rem;
-    max-width: 800px;
-    margin: 0 auto;
-    color: #000000;
+    margin-top: 10px;
+    line-height: 1.6;
+    color: #f0f0f0; /* Slightly lighter color for the text */
 }
-  
+
 /* Food Section Styling */
 .food-section {
-    margin-bottom: 40px;
+    margin: 50px 0;
+    padding: 0 20px;
+    background-color: aliceblue;
 }
-  
+
 .food-section .section-title {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #000000;
+    color: #0044cc;
+    margin-top: 30px;
     margin-bottom: 20px;
     text-align: center;
 }
-  
+
+/* Food Cards Container */
 .food-cards-container {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
+    justify-content: center; /* Center align cards */
 }
-  
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .hero-section {
-        padding: 40px 20px;
+        padding: 100px 20px;
+        height: 50vh; /* Adjust height for smaller screens */
     }
-  
+
     .hero-section .hero-text h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
-  
+
+    .hero-section .hero-text p {
+        font-size: 1rem;
+    }
+
     .food-section .section-title {
         font-size: 2rem;
     }
-  
-    .food-cards-container {
-        gap: 15px;
-    }
 }
-  

@@ -96,7 +96,7 @@ const Navbar = () => {
                         </li>
                         <li>
                             <NavLink
-                                to="/history"
+                                to="/history-culture"
                                 className={({ isActive }) =>
                                     isActive ? 'active' : undefined
                                 }

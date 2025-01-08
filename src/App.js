@@ -16,6 +16,7 @@ import Navbar from './components/Navbar';
 import ChineseCulture from './pages/HistoryCulture/ChineseCulture';
 import MalayCulture from './pages/HistoryCulture/MalayCulture';
 import IndianCulture from './pages/HistoryCulture/IndianCulture';
+import History from './pages/HistoryCulture/history';
 
 
 
@@ -28,7 +29,7 @@ const App = () => {
                 <Route path="/about" element={<About />} />
                 <Route path="/tourist-spot" element={<TouristSpot />} />
                 <Route path="/food" element={<Food />} />
-                <Route path="/history" element={<HistoryCulture />} />
+                <Route path="/history-culture" element={<HistoryCulture />} />
                 <Route path="/hotels" element={<Hotels />} />
                 <Route path="/transportation" element={<Transportation />} />
                 <Route path="/weather" element={<Weather />} />
@@ -43,6 +44,8 @@ const App = () => {
                 <Route path="/chinese-culture" element={<ChineseCulture />} />
                 <Route path="/indian-culture" element={<IndianCulture />} />
                 <Route path="/malay-culture" element={<MalayCulture />} />
+                <Route path="/history" element={<History/>} />
+
             </Routes>
         </Router>
     );

@@ -1,0 +1,109 @@
+.history-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden; /* Prevent horizontal scrollbars */
+}
+
+.history-section {
+    margin: 0 auto;
+    max-width: 800px; /* Limits the content width */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.history-title {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0056b3;
+}
+
+/* Subtitle styling */
+.history-subtitle {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #004080;
+}
+
+/* Paragraph styling */
+.history-introduction,
+.history-section p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Image styling */
+.history-image-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stacks the image and text */
+    align-items: center; /* Centers horizontally */
+    margin: 20px 0;
+}
+
+.history-vertical-image{
+    max-width: 100%; /* Keeps image within container */
+    width: 250px;
+    height: 350px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    object-fit: cover;   
+}
+
+.history-image {
+    max-width: 100%; /* Keeps image within container */
+    width: 600px;
+    height: 400px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+.history-image-description {
+    margin-top: 8px;
+    font-size: 0.9em;
+    color: #a1a1a1;
+    text-align: center;
+    font-style: italic;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Disables horizontal scrolling globally */
+    box-sizing: border-box;
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .history-container {
+        padding: 15px;
+    }
+
+    .history-section {
+        padding: 15px;
+    }
+
+    .history-title {
+        font-size: 1.8em;
+    }
+
+    .history-subtitle {
+        font-size: 1.3em;
+    }
+
+    .history-section p {
+        font-size: 0.95em;
+    }
+}

@@ -120,7 +120,7 @@ const HistoryCulture = () => {
                         <span className="material-icons">arrow_forward</span>
                     </button>
 
-                    <button className='learn-more-button'>
+                    <button className='learn-more-button' onClick={() => (window.location.href = '/history')}>
                         Learn more
                     </button>
                 </div>

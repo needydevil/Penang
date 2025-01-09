@@ -10,11 +10,12 @@
 
 .about-png-image {
     width: 100%;
-    max-width: 600px;
+    max-width: 450px; /* Reduced from 600px to 400px */
     height: auto;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
     margin: 0 auto; /* Center the image on smaller screens */
+    margin-right: -3px;
 }
 
 .about .aboutText {
@@ -24,6 +25,7 @@
     color: #333;
     max-width: 600px;
     width: 100%;
+    margin-right: 25px;
 }
 
 .about .aboutText h1 {
@@ -85,9 +87,14 @@
 }
 
 @media (max-width: 768px) {
-    .about .aboutText h1, .about .aboutText p {
+    .about .aboutText h1 {
         margin-left: 0;
         text-align: center;
+    }
+
+    .about .aboutText p {
+        margin-left: 20px;
+        text-align: justify;
     }
 
     .title-container {

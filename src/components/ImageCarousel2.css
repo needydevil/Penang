@@ -23,11 +23,11 @@
 }
 
 .carousel-button.prev {
-    left: 10px;
+    left: 0px;
 }
 
 .carousel-button.next {
-    right: 10px;
+    right: 0px;
 }
 
 .carousel-button:hover {
@@ -54,13 +54,13 @@
 
 .dot.active {
     background-color: #a4a3a8;
-    transform: scale(1.2);
+    transform: scale(0.4);
     padding: 6px;
 }
 
 @media (max-width: 768px) {
     .carousel-button {
-        padding: 8px;
+        padding: 5px;
     }
 
     .dot {
@@ -70,6 +70,6 @@
     }
 
     .dot.active {
-        transform: scale(1.5);
+        transform: scale(0.4);
     }
 }

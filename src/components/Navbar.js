@@ -142,7 +142,7 @@ const Navbar = () => {
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/history" className="sidebar-link">
+                        <NavLink to="/history-culture" className="sidebar-link">
                             Culture & History
                         </NavLink>
                     </li>

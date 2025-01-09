@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import About from './pages/About';
-import TouristSpot from './pages/TouristSpot';
+import Tourist_Spot from './pages/Tourist_Spot';
 import Georgetown from './pages/touristspot/georgetown';
 import Beaches from './pages/touristspot/beaches';
 import Cultural from './pages/touristspot/cultural';
@@ -17,7 +17,6 @@ import ChineseCulture from './pages/HistoryCulture/ChineseCulture';
 import MalayCulture from './pages/HistoryCulture/MalayCulture';
 import IndianCulture from './pages/HistoryCulture/IndianCulture';
 import History from './pages/HistoryCulture/history';
-import Tourist_Spot from './pages/Tourist_Spot';
 
 const App = () => {
     return (
@@ -26,7 +25,7 @@ const App = () => {
             <Routes>
                 {/* Main Routes */}
                 <Route path="/about" element={<About />} />
-                <Route path="/tourist-spot" element={<TouristSpot />} />
+                <Route path="/tourist-spot" element={<Tourist_Spot />} />
                 <Route path="/food" element={<Food />} />
                 <Route path="/history-culture" element={<HistoryCulture />} />
                 <Route path="/hotels" element={<Hotels />} />
@@ -45,9 +44,7 @@ const App = () => {
                 <Route path="/indian-culture" element={<IndianCulture />} />
                 <Route path="/malay-culture" element={<MalayCulture />} />
                 <Route path="/history" element={<History />} />
-
-                {/* New Tourist Spot Page */}
-                <Route path="/tourist-spot2" element={<Tourist_Spot />} />
+                
             </Routes>
         </Router>
     );

@@ -163,6 +163,7 @@
     position: absolute; /* Positioned relative to the container */
     bottom: 15px; /* Placed at the bottom of the container */
     right: 30px; /* Aligned to the right of the container */
+    text-decoration: none; /* Removes underline */
 }
 
 .view-more-button:hover {

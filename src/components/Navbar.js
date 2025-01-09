@@ -86,16 +86,6 @@ const Navbar = () => {
                         </li>
                         <li>
                             <NavLink
-                                to="/tourist-spot2"
-                                className={({ isActive }) =>
-                                    isActive ? 'active' : undefined
-                                }
-                            >
-                                Tourist Spot 2
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink
                                 to="/food"
                                 className={({ isActive }) =>
                                     isActive ? 'active' : undefined
@@ -144,11 +134,6 @@ const Navbar = () => {
                     <li>
                         <NavLink to="/tourist-spot" className="sidebar-link">
                             Tourist Spot
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/tourist-spot2" className="sidebar-link">
-                            Tourist Spot 2
                         </NavLink>
                     </li>
                     <li>

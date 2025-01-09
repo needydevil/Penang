@@ -17,8 +17,7 @@ import ChineseCulture from './pages/HistoryCulture/ChineseCulture';
 import MalayCulture from './pages/HistoryCulture/MalayCulture';
 import IndianCulture from './pages/HistoryCulture/IndianCulture';
 import History from './pages/HistoryCulture/history';
-
-
+import Tourist_Spot from './pages/Tourist_Spot';
 
 const App = () => {
     return (
@@ -41,11 +40,14 @@ const App = () => {
                 <Route path="/tourist-spot/nature" element={<Nature />} />
                 <Route path="/tourist-spot/museum" element={<Museum />} />
 
+                {/* History and Culture Routes */}
                 <Route path="/chinese-culture" element={<ChineseCulture />} />
                 <Route path="/indian-culture" element={<IndianCulture />} />
                 <Route path="/malay-culture" element={<MalayCulture />} />
-                <Route path="/history" element={<History/>} />
+                <Route path="/history" element={<History />} />
 
+                {/* New Tourist Spot Page */}
+                <Route path="/tourist-spot2" element={<Tourist_Spot />} />
             </Routes>
         </Router>
     );

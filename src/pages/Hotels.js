@@ -59,7 +59,7 @@ const Hotels = () => {
                     <p>📍 Georgetown</p>
                 </div>
             </div>
-            <hr className="divider-line" />
+            <hr className="about-divider-line" />
 
             <div className='hotel-page-section'>
                 <div className='hotel-image'>
@@ -79,7 +79,7 @@ const Hotels = () => {
                     <p>📍 Georgetown</p>
                 </div>
             </div>
-            <hr className="divider-line" />
+            <hr className="about-divider-line" />
 
             <div className='hotel-page-section'>
                 <div className='hotel-image'>
@@ -99,7 +99,7 @@ const Hotels = () => {
                     <p>📍 Batu Ferringhi</p>
                 </div>
             </div>
-            <hr className="divider-line" />
+            <hr className="about-divider-line" />
 
             <div className='hotel-page-section'>
                 <div className='hotel-image'>

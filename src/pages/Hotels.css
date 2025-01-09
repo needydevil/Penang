@@ -1,20 +1,23 @@
 .hotel-page-section {
     display: flex;
-    flex-direction: column; /* Column layout for smaller screens */
-    align-items: flex-start;
-    gap: 40px; /* Reduced gap for better spacing */
+    flex-direction: column;
+    /* Column layout for smaller screens */
+    align-items: center;
+    gap: 40px;
+    /* Reduced gap for better spacing */
     margin: 20px;
     max-width: 1200px;
-    padding: 20px; /* Added padding for better spacing */
+    padding: 20px;
+    /* Added padding for better spacing */
 }
 
 .hotel-image img {
-    width: 100%;
-    max-width: 500px; /* Maintain a max width */
-    height: auto;
+    width: 500px;
+    height: 325px;
     object-fit: cover;
     border-radius: 5px;
-    margin: 0 auto; /* Center the image on smaller screens */
+    margin: 0 auto;
+    /* Center the image on smaller screens */
 }
 
 .hotel-transportation-description {
@@ -28,13 +31,18 @@
 
 .hotel-transportation-description h1 {
     margin: 0;
-    font-size: 24px; /* Adjust font size */
-    line-height: 1.2; /* Adjust line height */
+    font-size: 24px;
+    /* Adjust font size */
+    line-height: 1.2;
+    /* Adjust line height */
+    text-align: center;
 }
 
 .hotel-transportation-description p {
-    margin-top: 10px; /* Reduced margin for better spacing */
-    font-size: 14px; /* Adjust font size */
+    margin-top: 10px;
+    /* Reduced margin for better spacing */
+    font-size: 14px;
+    /* Adjust font size */
     color: #555;
     text-align: justify;
 }
@@ -42,23 +50,31 @@
 /* Responsive Design */
 @media (min-width: 768px) {
     .hotel-page-section {
-        flex-direction: row; /* Row layout for larger screens */
-        gap: 80px; /* Original gap for larger screens */
-        margin: 50px 100px; /* Original margin for larger screens */
+        flex-direction: row;
+        /* Row layout for larger screens */
+        gap: 80px;
+        /* Original gap for larger screens */
+        margin: 50px 100px;
+        /* Original margin for larger screens */
     }
 
     .hotel-transportation-description h1 {
-        font-size: 28px; /* Original font size for larger screens */
+        font-size: 28px;
+        /* Original font size for larger screens */
+        text-align: left;
     }
 
     .hotel-transportation-description p {
-        font-size: 16px; /* Original font size for larger screens */
+        font-size: 16px;
+        /* Original font size for larger screens */
     }
 }
 
-.divider-line {
-    border: 0;
-    height: 1px;
-    background: #ccc;
-    margin: 40px 0; /* Add space around the divider */
+.about-divider-line {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 30px auto;
+    /* Space above and below the line */
+    width: 90%;
+    /* Adjust width as needed */
 }

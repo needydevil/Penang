@@ -1,33 +1,78 @@
 .transportation-page-section {
     display: flex;
-    flex-direction: column; /* Stack the content vertically on small screens */
-    align-items: center; /* Center align items horizontally */
-    gap: 40px; /* Adjust gap for smaller screens */
-    margin: 20px; /* Reduced margin for mobile */
-    max-width: 100%; /* Ensure the section doesn't exceed the screen width */
-    padding: 0 20px; /* Added padding for better spacing */
+    flex-direction: row;
+    /* Stack the content vertically on small screens */
+    align-items: center;
+    /* Center align items horizontally */
+    gap: 40px;
+    /* Adjust gap for smaller screens */
+    margin: 20px;
+    /* Reduced margin for mobile */
+    max-width: 100%;
+    /* Ensure the section doesn't exceed the screen width */
+    padding: 0 20px;
+    /* Added padding for better spacing */
 }
 
 .transportation-image img {
-    width: 100%; /* Make the image responsive */
-    max-width: 500px; /* Ensure image doesn't become too large */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    /* Make the image responsive */
+    max-width: 500px;
+    /* Ensure image doesn't become too large */
+    height: auto;
+    /* Maintain aspect ratio */
     object-fit: cover;
     border-radius: 5px;
-    margin-bottom: 20px; /* Add space between image and text */
+    margin-bottom: 20px 0px 0px 50px;
+    /* Add space between image and text */
+}
+
+.hotel-transportation-description h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    /* Adjust font size */
+    line-height: 1.2;
+    /* Adjust line height */
+    text-align: left;
+}
+
+.hotel-transportation-description p {
+    margin-top: 10px;
+    /* Reduced margin for better spacing */
+    font-size: 16px;
+    /* Adjust font size */
+    color: #555;
+    text-align: justify;
 }
 
 /* Mobile-Specific Styles */
 @media (max-width: 768px) {
     .transportation-page-section {
-        flex-direction: column; /* Stack elements vertically on small screens */
-        align-items: center; /* Center-align items on smaller screens */
-        gap: 20px; /* Adjust gap between image and text */
-        margin: 20px; /* Reduced margin for mobile */
+        flex-direction: column;
+        /* Stack elements vertically on small screens */
+        align-items: center;
+        /* Center-align items on smaller screens */
+        gap: 20px;
+        /* Adjust gap between image and text */
+        margin: 20px;
+        /* Reduced margin for mobile */
+    }
+
+    .hotel-transportation-description h1 {
+        font-size: 28px;
+        /* Original font size for larger screens */
+        text-align: center;
+    }
+
+    .hotel-transportation-description p {
+        font-size: 16px;
+        /* Original font size for larger screens */
     }
 
     .transportation-image img {
-        width: 100%; /* Image takes full width on mobile */
-        height: auto; /* Maintain aspect ratio */
+        width: 100%;
+        /* Image takes full width on mobile */
+        height: auto;
+        /* Maintain aspect ratio */
     }
 }

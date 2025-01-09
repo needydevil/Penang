@@ -15,60 +15,77 @@
 }
 
 .weather-image img {
-    width: 100%;
-    max-width: 100%; /* Adjusted to ensure responsiveness on mobile */
+    width: 90%;
+    max-width: 100%;
+    /* Adjusted to ensure responsiveness on mobile */
     height: auto;
     object-fit: cover;
-    margin-top: 20px; /* Reduced margin for mobile */
-    margin-bottom: 20px; /* Reduced margin for mobile */
+    margin-top: 40px;
+    /* Reduced margin for mobile */
+    margin-bottom: 30px;
+    /* Reduced margin for mobile */
 }
 
 .weather-page-section {
-    max-width: 100%; /* Ensure section takes full width on mobile */
+    max-width: 100%;
+    /* Ensure section takes full width on mobile */
     text-align: justify;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
-    padding: 0 15px; /* Added padding to prevent content from touching the edges */
+    padding: 0 15px;
+    /* Added padding to prevent content from touching the edges */
 }
 
 .weather-description h1 {
     text-align: center;
-    margin: 10px 0px 20px 0px; /* Adjusted margin for smaller screens */
-    font-size: 24px; /* Adjusted font size for mobile */
+    margin: 10px 0px 20px 0px;
+    /* Adjusted margin for smaller screens */
+    font-size: 28px;
+    /* Adjusted font size for mobile */
 }
 
 .weather-description p {
     text-align: justify;
     margin: 10px 0;
     line-height: 1.6;
-    font-size: 16px; /* Adjusted font size for readability on smaller screens */
+    font-size: 16px;
+    /* Adjusted font size for readability on smaller screens */
+    max-width: 1350px;
 }
 
 /* Mobile-Specific Styles */
 @media (max-width: 768px) {
     .weather-page {
-        padding: 20px; /* Added padding to prevent edges from being too close */
+        padding: 20px;
+        /* Added padding to prevent edges from being too close */
     }
 
     /* Adjust image size on mobile */
     .weather-image img {
-        max-width: 100%; /* Ensure image doesn't overflow on small screens */
+        width: 100%;
+        max-width: 100%;
+        /* Ensure image doesn't overflow on small screens */
+        margin-bottom: 20px;
+        margin-top: 20px;
     }
 
     /* Adjust section content */
     .weather-page-section {
-        padding: 0 20px; /* More padding on the sides for better spacing */
+        padding: 0 20px;
+        /* More padding on the sides for better spacing */
     }
 
     /* Adjust title size */
     .weather-description h1 {
-        font-size: 20px; /* Smaller title size for mobile */
+        font-size: 28px;
+        /* Smaller title size for mobile */
     }
 
     /* Adjust paragraph text */
     .weather-description p {
-        font-size: 14px; /* Smaller font size for paragraphs on mobile */
+        font-size: 16px;
+        /* Smaller font size for paragraphs on mobile */
     }
 }

@@ -32,7 +32,7 @@ const Transportation = () => {
                 <div className='transportation-image'>
                     <ImageCarousel2 images={landTransportImages} />
                 </div>
-                <div className='hotel-transportation-description'>   {/*here*/}
+                <div className='hotel-transportation-description'>
                     <h1>Land Transportation</h1>
                     <p>
                         <strong>Rapid Penang</strong> is the primary public bus service, which serves a wide area on the island and mainland. In George Town, it also runs a free Central Area Transit (CAT) bus service. To determine which bus route best suits you, just ask around, keep an eye out for signboards or you can use Google Maps to see the best route. Once you're on the Rapid Penang bus, let the driver know where you're going, pay the necessary fee, and get your ticket.
@@ -49,7 +49,7 @@ const Transportation = () => {
                     </p>
                 </div>
             </div>
-            <hr className="divider-line" />
+            <hr className="about-divider-line" />
 
             <div className='transportation-page-section'>
                 <div className='transportation-image'>
@@ -71,7 +71,7 @@ const Transportation = () => {
                     </p>
                 </div>
             </div>
-            <hr className="divider-line" />
+            <hr className="about-divider-line" />
 
             <div className='transportation-page-section'>
                 <div className='transportation-image'>

@@ -111,6 +111,7 @@
     background-color: #f2f1fa; /* Light blue background */
     border-radius: 15px; /* Added rounded corners */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for better visual effect */
+    scroll-margin-top: 75px; /* Adjust the value based on the height of your fixed header */
 }
 
 .first-section {
@@ -167,6 +168,14 @@
 .view-more-button:hover {
     background-color: #3b3b57;
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:target {
+    scroll-margin-top: 100px; /* Adjust for header height */
 }
 
 /* Responsive Design */

@@ -104,20 +104,24 @@
 /* Georgetown Section Styling */
 .tourist-section {
     position: relative;
-    margin: 150px auto; /* Increased margin-top to move the section downward */
+    margin: 80px auto; /* Increased margin-top to move the section downward */
     padding: 30px; /* Increased padding for better layout */
     max-width: 1200px;
     text-align: left;
-    background-color: #e6f7ff; /* Light blue background */
+    background-color: #f2f1fa; /* Light blue background */
     border-radius: 15px; /* Added rounded corners */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for better visual effect */
+}
+
+.first-section {
+    margin: 200px auto 80px; /* Larger margin only for the first section */
 }
 
 .tourist-section h2 {
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 10px; /* Adjusted spacing between title and description */
-    color: #2a4d89; /* Light dark blue color for title */
+    color: #33334d; 
 }
 
 .tourist-description {
@@ -147,12 +151,12 @@
 .view-more-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #3366ff;
-    color: white;
+    background-color: #4a4a6a;
+    color: #ffffff;
     font-size: 16px;
     font-weight: bold;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     position: absolute; /* Positioned relative to the container */
@@ -161,7 +165,8 @@
 }
 
 .view-more-button:hover {
-    background-color: #2244cc;
+    background-color: #3b3b57;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow */
 }
 
 /* Responsive Design */

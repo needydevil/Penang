@@ -2,9 +2,9 @@ import React from 'react';
 import './Tourist_Spot.css';
 
 // Reusable Tourist Section Component
-const TouristSection = ({ title, description, images }) => {
+const TouristSection = ({ title, description, images, className }) => {
     return (
-        <div className="tourist-section">
+        <div className={`tourist-section ${className}`}>
             <h2>{title}</h2>
             <p className="tourist-description">{description}</p>
             <div className="tourist-images">
@@ -107,6 +107,7 @@ const Tourist_Spot = () => {
                     title={section.title}
                     description={section.description}
                     images={section.images}
+                    className={index === 0 ? 'first-section' : ''} // Add className conditionally
                 />
             ))}
         </div>

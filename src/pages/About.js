@@ -44,8 +44,8 @@ const About = () => {
 
                 <ImageCarousel2 images={hotelImages} />
 
-                <div className="view-more-button-container">
-                    <button className="view-more-button">
+                <div className="about-view-more-button-container">
+                    <button className="about-view-more-button">
                         View More
                     </button>
                 </div>
@@ -65,8 +65,8 @@ const About = () => {
 
                 <ImageCarousel2 images={transportImages} />
 
-                <div className="view-more-button-container">
-                    <button className="view-more-button">
+                <div className="about-view-more-button-container">
+                    <button className="about-view-more-button">
                         View More
                     </button>
                 </div>
@@ -91,8 +91,8 @@ const About = () => {
                     />
                 </div>
 
-                <div className="view-more-button-container">
-                    <button className="view-more-button">
+                <div className="about-view-more-button-container">
+                    <button className="about-view-more-button">
                         View More
                     </button>
                 </div>

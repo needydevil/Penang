@@ -70,6 +70,7 @@
 
     .card-content h2 {
         font-size: 1.25rem; /* Adjust title size for smaller screens */
+        text-align: justify;
     }
 
     .card-content p {

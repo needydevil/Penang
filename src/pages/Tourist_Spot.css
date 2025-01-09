@@ -102,51 +102,50 @@
 }
 
 /* Georgetown Section Styling */
-.georgetown-section {
+.tourist-section {
     position: relative;
     margin: 150px auto; /* Increased margin-top to move the section downward */
-    padding: 20px;
+    padding: 30px; /* Increased padding for better layout */
     max-width: 1200px;
     text-align: left;
+    background-color: #e6f7ff; /* Light blue background */
+    border-radius: 15px; /* Added rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for better visual effect */
 }
 
-.georgetown-section h2 {
+.tourist-section h2 {
     font-size: 32px;
     font-weight: bold;
-    margin-bottom: 5px; /* Reduced spacing between title and description */
-    color: #2a4d89; /* Changed to light dark blue */
+    margin-bottom: 10px; /* Adjusted spacing between title and description */
+    color: #2a4d89; /* Light dark blue color for title */
 }
 
-.georgetown-description {
+.tourist-description {
     font-size: 18px;
     margin-bottom: 20px;
     color: #555;
     margin-left: 0; /* Align description with the title */
-    white-space: nowrap; /* Ensure the description stays on one line */
-    overflow: hidden; /* Hide overflow text */
-    text-overflow: ellipsis; /* Add ellipsis for overflow */
+    white-space: nowrap; /* Ensure text wraps properly */
+    line-height: 1.5; /* Added line height for better readability */
 }
 
-.georgetown-images {
+.tourist-images {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px; /* Added spacing between images and the button */
 }
 
-.georgetown-images img {
+.tourist-images img {
     width: 100%;
-    max-width: calc(33.33% - 20px); /* Adjust for 3 images with spacing */
-    height: auto;
+    max-width: calc(33.33% - 20px); /* Adjusted for 3 images with spacing */
+    height: 300px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .view-more-button {
     display: inline-block;
-    position: absolute; /* Position button */
-    right: 0; /* Align to bottom-right corner */
-    bottom: -30px; /* Adjusted distance from the section */
     padding: 10px 20px;
     background-color: #3366ff;
     color: white;
@@ -156,6 +155,9 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    position: absolute; /* Positioned relative to the container */
+    bottom: 15px; /* Placed at the bottom of the container */
+    right: 30px; /* Aligned to the right of the container */
 }
 
 .view-more-button:hover {
@@ -187,16 +189,22 @@
         padding: 8px 15px;
     }
 
-    .georgetown-section {
+    .tourist-section {
         padding: 15px;
     }
 
-    .georgetown-images {
+    .tourist-images {
         flex-wrap: wrap;
         gap: 15px;
     }
 
-    .georgetown-images img {
+    .tourist-images img {
         max-width: 100%; /* Stack images on smaller screens */
+    }
+
+    .view-more-button {
+        position: static; /* Flow naturally on smaller screens */
+        margin-top: 15px; /* Add spacing */
+        transform: none;
     }
 }

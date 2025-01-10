@@ -45,9 +45,11 @@ const About = () => {
                 <ImageCarousel2 images={hotelImages} />
 
                 <div className="about-view-more-button-container">
-                    <button className="about-view-more-button">
-                        View More
-                    </button>
+                    <a href='/Hotels'>
+                        <button className="about-view-more-button">
+                            View More
+                        </button>
+                    </a>
                 </div>
             </div>
 
@@ -66,9 +68,11 @@ const About = () => {
                 <ImageCarousel2 images={transportImages} />
 
                 <div className="about-view-more-button-container">
-                    <button className="about-view-more-button">
-                        View More
-                    </button>
+                    <a href='/Transportation'>
+                        <button className="about-view-more-button">
+                            View More
+                        </button>
+                    </a>
                 </div>
             </div>
 
@@ -92,9 +96,11 @@ const About = () => {
                 </div>
 
                 <div className="about-view-more-button-container">
-                    <button className="about-view-more-button">
-                        View More
-                    </button>
+                    <a href='/Weather'>
+                        <button className="about-view-more-button">
+                            View More
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>

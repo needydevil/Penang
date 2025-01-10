@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Home from './pages/home';
 import About from './pages/About';
-import Tourist_Spot from './pages/Tourist_Spot';
+import TouristSpot from './pages/Tourist_Spot';
 import Georgetown from './pages/touristspot/georgetown';
 import Beaches from './pages/touristspot/beaches';
 import Cultural from './pages/touristspot/cultural';
@@ -43,7 +43,7 @@ const Layout = () => {
                 <Route path="/" element={<Home />} /> {/* Set Home as the root route */}
                 {/* Main Routes */}
                 <Route path="/about" element={<About />} />
-                <Route path="/tourist-spot" element={<Tourist_Spot />} />
+                <Route path="/tourist-spot" element={<TouristSpot />} />
                 <Route path="/food" element={<Food />} />
                 <Route path="/history-culture" element={<HistoryCulture />} />
                 <Route path="/hotels" element={<Hotels />} />

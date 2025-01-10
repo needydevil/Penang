@@ -10,16 +10,15 @@
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 80px 20px;
+    padding: 75px 0px;
     border-radius: 10px;
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    height: 60vh;
+    align-items: flex-end; /* Position content at the bottom */
+    height: 60vh; /* Consistent height for the hero section */
     text-align: center;
     overflow: hidden;
-    animation: fadeIn 2s ease-in-out; /* Add fade-in animation */
 }
 
 .hero-section::before {
@@ -29,13 +28,13 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)); 
     z-index: 1;
     border-radius: 10px;
 }
 
 .hero-section .hero-text {
-    position: relative;
+    position: relative; /* Ensure text is above the overlay */
     z-index: 2;
     max-width: 800px;
     padding: 20px;
@@ -49,32 +48,14 @@
     text-transform: uppercase;
     line-height: 1.2;
     color: white;
-    background: linear-gradient(90deg, rgba(255,0,150,1) 0%, rgba(0,204,255,1) 100%);
-    /* -webkit-background-clip: text; */
-    -webkit-text-fill-color: transparent;
-    animation: slideIn 1.5s ease-in-out;
 }
 
 .hero-section .hero-text p {
     font-size: 1.25rem;
     margin-top: 10px;
     line-height: 1.6;
-    color: #f0f0f0;
-    animation: slideIn 2s ease-in-out;
+    color: #f0f0f0; /* Slightly lighter color for the text */
 }
-
-/* Keyframes for fadeIn animation */
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-/* Keyframes for slideIn animation */
-@keyframes slideIn {
-    0% { transform: translateY(20px); opacity: 0; }
-    100% { transform: translateY(0); opacity: 1; }
-}
-
 
 /* Food Section Styling */
 .food-section {

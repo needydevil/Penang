@@ -65,7 +65,7 @@
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease, transform 0.3s ease;
-    margin-left: 530px; /* Center the button */
+    margin-left: 535px;
     display: inline-flex; /* Align text and arrow properly */
     align-items: center; /* Vertically align text and arrow */
 }
@@ -92,6 +92,7 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .video-overlay {
+        width: 90%;
         padding: 10px;
         font-size: 1.5rem;
     }
@@ -106,6 +107,8 @@
     .start-discovering-button {
         padding: 5px 10px;
         font-size: 14px;
+        margin-left: auto; /* Center the button */
+        margin-right: auto; /* Center the button */
     }
     .start-discovering-button::after {
         font-size: 14px;

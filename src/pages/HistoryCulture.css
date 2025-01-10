@@ -62,26 +62,6 @@
     color: #e0e0e0;
 }
 
-.history-hero-button {
-    padding: clamp(5px, 1vw, 8px) clamp(20px, 2vw, 30px);
-    font-size: clamp(0.8rem, 1vw, 1rem);
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.8);
-    background-color: transparent;
-    border: 1px solid #ffffff;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.history-hero-button:hover {
-    backdrop-filter: blur(8px);
-    background-color: white;
-    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3);
-    color: black;
-}
-
 /* Scoped Cards Section */
 .history-cards-title {
     text-align: center;

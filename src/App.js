@@ -1,5 +1,6 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import Home from './pages/home';
 import About from './pages/About';
 import Tourist_Spot from './pages/Tourist_Spot';
 import Georgetown from './pages/touristspot/georgetown';
@@ -18,11 +19,28 @@ import MalayCulture from './pages/HistoryCulture/MalayCulture';
 import IndianCulture from './pages/HistoryCulture/IndianCulture';
 import History from './pages/HistoryCulture/history';
 
-const App = () => {
+// Create a Layout component to apply conditional styling
+const Layout = () => {
+    const location = useLocation();
+
+    useEffect(() => {
+        // Apply conditional styles based on the current route
+        if (location.pathname === '/') {
+            document.body.style.overflow = 'hidden'; // Disable scrolling for the Home page
+        } else {
+            document.body.style.overflow = 'auto'; // Enable scrolling for other pages
+        }
+        // Cleanup on component unmount or route change
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+    }, [location]);
+
     return (
-        <Router>
+        <>
             <Navbar />
             <Routes>
+                <Route path="/" element={<Home />} /> {/* Set Home as the root route */}
                 {/* Main Routes */}
                 <Route path="/about" element={<About />} />
                 <Route path="/tourist-spot" element={<Tourist_Spot />} />
@@ -44,8 +62,15 @@ const App = () => {
                 <Route path="/indian-culture" element={<IndianCulture />} />
                 <Route path="/malay-culture" element={<MalayCulture />} />
                 <Route path="/history" element={<History />} />
-                
             </Routes>
+        </>
+    );
+};
+
+const App = () => {
+    return (
+        <Router>
+            <Layout />
         </Router>
     );
 };

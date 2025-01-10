@@ -16,8 +16,8 @@ const Navbar = () => {
                     {/* Logo Section */}
                     <div className="logo-container">
                         <NavLink to="/" className="logo">
-                            <img 
-                                src="/title.jpg" // Update the path to your logo image
+                            <img
+                                src="/title.png" // Update the path to your logo image
                                 alt="Areca Logo"
                                 className="logo-image"
                             />

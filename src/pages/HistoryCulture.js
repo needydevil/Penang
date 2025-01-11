@@ -48,7 +48,7 @@ const HistoryCulture = () => {
 
     return (
         <>
-            <section className="history-container">
+            <section className="history-culture-container">
                 <div className="history-container1">
                     <img 
                         src="/Street_art_1.png" 

@@ -5,8 +5,8 @@ import ImageCarousel from '../../components/ImageCarousel'; // Adjust path based
 const Cultural = () => {
     const images = [
         { id: 1, src: '/kekloksitemple2.jpeg', alt: 'Kek Lok Si Temple', caption: 'Kek Lok Si Temple at Night' },
-        { id: 2, src: '/kapitankeling.jpeg', alt: 'Kapitan Keling Mosque', caption: 'Kapitan Keling Mosque' },
-        { id: 3, src: '/khookongsi.jpeg', alt: 'Khoo Kongsi', caption: 'Khoo Kongsi Clan House' },
+        { id: 2, src: '/kapitanmosque.jpg', alt: 'Kapitan Keling Mosque', caption: 'Kapitan Keling Mosque' },
+        { id: 3, src: '/khookongsi2.jpg', alt: 'Khoo Kongsi', caption: 'Khoo Kongsi Clan House' },
     ];
 
     return (

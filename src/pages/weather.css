@@ -43,7 +43,6 @@
     margin: 10px 0px 20px 0px;
     /* Adjusted margin for smaller screens */
     font-size: 28px;
-    /* Adjusted font size for mobile */
 }
 
 .weather-description p {
@@ -57,7 +56,6 @@
 
 .weather-forecast {
     padding-top: 30px;
-    /* Adjust the value to your preference */
 }
 
 

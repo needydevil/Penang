@@ -4,9 +4,9 @@ import ImageCarousel from '../../components/ImageCarousel'; // Adjust path based
 
 const Beaches = () => {
     const images = [
-        { id: 1, src: '/batuferringhi2.jpeg', alt: 'Batu Ferringhi', caption: 'Batu Ferringhi Beach' },
-        { id: 2, src: '/tanjungbungah.jpeg', alt: 'Tanjung Bungah', caption: 'Tanjung Bungah Beach' },
-        { id: 3, src: '/monkeybeach.jpg', alt: 'Monkey Beach', caption: 'Monkey Beach' },
+        { id: 1, src: '/batuferringhi.webp', alt: 'Batu Ferringhi', caption: 'Batu Ferringhi Beach' },
+        { id: 2, src: '/tanjungbungah1.jpg', alt: 'Tanjung Bungah', caption: 'Tanjung Bungah Beach' },
+        { id: 3, src: '/MonkeyBeachTourfromPenang.jpg', alt: 'Monkey Beach', caption: 'Monkey Beach' },
     ];
 
     return (

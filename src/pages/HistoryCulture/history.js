@@ -1,7 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './history.css';
 
 const History = () => {
+    const navigate = useNavigate();
+
     return (
         <div className="history-container">
             <section className="history-section">
@@ -55,6 +58,16 @@ const History = () => {
                     <p className="history-image-description">Modern Penang</p>
                 </div>
             </section>
+
+            {/* Back Button */}
+            <div className="back-button-container">
+                <button 
+                    onClick={() => navigate(-1)} 
+                    className="back-button"
+                >
+                    Back
+                </button>
+            </div>
         </div>
     );
 };

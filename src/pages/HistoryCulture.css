@@ -5,11 +5,12 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    width: 98.8%;
+    width: 100%;
     margin: 20px auto;
     height: auto;
-    margin-left: -10px;
-    margin-right: 10px;
+    max-width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 .history-container1, .history-container2, .history-container3 {
@@ -81,6 +82,8 @@
     gap: 50px;
     margin: 0 auto;
     margin-bottom: 50px;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 .history-card {
@@ -195,6 +198,8 @@
     margin: 0; /* Remove any default margins */
     width: 100%; /* Full width to span across the screen */
     box-sizing: border-box; /* Include padding in the width */
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .history-slider-title{
@@ -213,6 +218,8 @@
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .slider-wrapper {
@@ -358,4 +365,18 @@
 
 .learn-more-button:active {
     transform: scale(0.95); /* Slightly shrink the button when clicked */
+}
+
+/* Prevent horizontal overflow */
+html, body {
+    overflow-x: hidden;
+}
+
+/* Ensure images and other elements do not exceed their container's width */
+.history-container img,
+.slider img,
+.history-card__img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }

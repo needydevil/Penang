@@ -124,6 +124,7 @@ const HistoryCulture = () => {
 
                 <div className="slider-nav">
                     {slides.map((_, index) => (
+                        // eslint-disable-next-line
                         <a
                             key={index}
                             href={`#slide-${index}`}
@@ -161,7 +162,7 @@ const HistoryCulture = () => {
                     <div className="history-card__info">
                         <span className="history-card__category">Chinese</span>
                         <h3 className="history-card__title">Chinese Culture</h3>
-                        <a className="history-card__description" title="description"> 了解详情 </a>
+                        <a href="/chinese-culture" className="history-card__description" title="description"> 了解详情 </a>
                     </div>
                 </article>
 
@@ -183,7 +184,7 @@ const HistoryCulture = () => {
                     <div className="history-card__info">
                         <span className="history-card__category">Malay</span>
                         <h3 className="history-card__title">Malay Culture</h3>
-                        <a className="history-card__description" title="description"> Lebih Lanjut </a>
+                        <a href="/malay-culture" className="history-card__description" title="description"> Lebih Lanjut </a>
                     </div>
                 </article>
 
@@ -205,7 +206,7 @@ const HistoryCulture = () => {
                     <div className="history-card__info">
                         <span className="history-card__category">Indian</span>
                         <h3 className="history-card__title">Indian Culture</h3>
-                        <a className="history-card__description" title="description"> और अधिक जानें </a>
+                        <a href="/Indian-culture" className="history-card__description" title="description"> और अधिक जानें </a>
                     </div>
                 </article>
             </section>

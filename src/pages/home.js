@@ -9,7 +9,6 @@ const Home = () => {
                 <video
                     className="background-video"
                     autoPlay
-                    loop
                     muted
                 >
                     <source src="/homepage.mp4" type="video/mp4" />

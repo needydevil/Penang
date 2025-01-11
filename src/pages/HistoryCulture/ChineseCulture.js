@@ -1,7 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // Import the useNavigate hook
 import './Culture.css'; // Add a separate CSS file for styling
 
 const ChineseCulture = () => {
+    const navigate = useNavigate(); // Initialize the navigate function
+
     const cardData = [
         {
             id: 1,
@@ -30,22 +33,26 @@ const ChineseCulture = () => {
         <div style={{ padding: "2rem" }}>
             <h1 style={{ textAlign: "center", marginBottom: "2rem" }}>Chinese Culture</h1>
             {cardData.map((card) => (
-                <div className="card-container">
-                <div className="culture-card" key={card.id}>
-                    <div className="card-image">
-                        <img src={card.image} alt={card.alt} />
+                <div className="card-container" key={card.id}>
+                    <div className="culture-card">
+                        <div className="card-image">
+                            <img src={card.image} alt={card.alt} />
+                        </div>
+                        <div className="card-content">
+                            <h2>{card.title}</h2>
+                            <p>{card.description}</p>
+                        </div>
                     </div>
-                    <div className="card-content">
-                        <h2>{card.title}</h2>
-                        <p>{card.description}</p>
-                    </div>
-                </div>
                 </div>
             ))}
+            <button
+                onClick={() => navigate(-1)} // Go back to the previous page
+                className='back-button'
+            >
+                Back
+            </button>
         </div>
     );
 };
-
-
 
 export default ChineseCulture;

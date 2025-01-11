@@ -1,7 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // Import the useNavigate hook
 import './Culture.css'; // Add a separate CSS file for styling
 
 const IndianCulture = () => {
+    const navigate = useNavigate(); // Initialize the navigate function
+
     const cardData = [
         {
             id: 1,
@@ -42,6 +45,12 @@ const IndianCulture = () => {
                     </div>
                 </div>
             ))}
+            <button 
+                onClick={() => navigate('/history-culture')} 
+                className="back-button"
+            >
+                Back
+            </button>
         </div>
     );
 };

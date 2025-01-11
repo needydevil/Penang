@@ -33,6 +33,7 @@
     border-radius: 12px;
     margin-right: 2rem;
     transition: transform 0.3s ease;
+    margin-bottom: -4px;
 }
 
 .card-content {
@@ -41,16 +42,16 @@
 }
 
 .card-content h2 {
-    margin: 0 0 1rem;
+    margin: 0 0 0;
     font-size: 1.8rem; /* Larger font size for readability on desktops */
     color: #333;
 }
 
 .card-content p {
-    margin: 0;
+    margin: 0 0 0;
     color: #555;
     font-size: 1rem;
-    line-height: 1.6; /* Improved line spacing for readability */
+    line-height: 1.5; /* Improved line spacing for readability */
 }
 
 /* Media Query for Tablets and Smaller Screens */
@@ -58,12 +59,12 @@
     .culture-card {
         flex-direction: column; /* Stack image and text vertically */
         text-align: center; /* Center-align content */
-        width: 90%; /* Adjust width for smaller screens */
+        width: 100%; /* Adjust width for smaller screens */
     }
 
     .card-image img {
         width: 100%; /* Image fills card width */
-        height: auto; /* Maintain aspect ratio */
+        height: 100%; /* Maintain aspect ratio */
         border-radius: 12px 12px 0 0; /* Rounded corners at the top */
         margin-right: 0;
         margin-bottom: 1rem; /* Space between image and text */
@@ -85,19 +86,28 @@
 }
 
 .back-button {
-    margin-top: 2rem;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    transition: background-color 0.3s ease;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        border: none;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        transition: background-color 0.3s ease;
+        opacity: 0.4;
 }
 
 .back-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 1;
+    transition: opacity ease 0.5s;
 }
 
 /* Media Query for Mobile Phones */

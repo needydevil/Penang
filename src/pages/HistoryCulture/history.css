@@ -37,8 +37,23 @@
     transition: background-color 0.3s ease;
 }
 
+.back-button {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        position: relative;
+        border: none;
+        border-radius: 20px;
+        width: 80px;
+        height: 40px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        opacity: 0.6;
+}
+
 .back-button:hover {
-    background-color: #0056b3;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 1;
+    transition: opacity ease 0.5s;
 }
 
 /* Title styling */

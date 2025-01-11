@@ -1,8 +1,11 @@
 import React from 'react';
 import './nature.css';
 import ImageCarousel from '../../components/ImageCarousel'; // Adjust path based on your file structure
+import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
 
 const Nature = () => {
+    const navigate = useNavigate(); // Initialize navigate
+
     const images = [
         { id: 1, src: '/penanghill.jpg', alt: 'Penang Hill', caption: 'The Scenic Beauty of Penang Hill' },
         { id: 2, src: '/penangnationalpark.jpg', alt: 'Penang National Park', caption: 'Exploring Penang National Park' },
@@ -49,6 +52,15 @@ const Nature = () => {
                         The gardens are also home to long-tailed macaques and a wide range of bird species. Whether you're looking for a peaceful stroll, a jog, or simply to admire nature, the Botanical Gardens is a refreshing escape from city life. Its annual floral festivals further highlight its charm and beauty.
                     </p>
                 </section>
+            </div>
+            {/* Back Button */}
+            <div className="back-button-container">
+                <button
+                    onClick={() => navigate(-1)} // Navigate back
+                    className="back-button"
+                >
+                    Back
+                </button>
             </div>
         </div>
     );

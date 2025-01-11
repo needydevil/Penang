@@ -1,8 +1,11 @@
 import React from 'react';
 import './cultural.css';
 import ImageCarousel from '../../components/ImageCarousel'; // Adjust path based on your file structure
+import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
 
 const Cultural = () => {
+    const navigate = useNavigate(); // Initialize navigate
+
     const images = [
         { id: 1, src: '/kekloksitemple2.jpeg', alt: 'Kek Lok Si Temple', caption: 'Kek Lok Si Temple at Night' },
         { id: 2, src: '/kapitanmosque.jpg', alt: 'Kapitan Keling Mosque', caption: 'Kapitan Keling Mosque' },
@@ -48,6 +51,15 @@ const Cultural = () => {
                         Visitors can wander through its grand halls and open courtyards, which serve as a hub for family gatherings and cultural events. The detailed depictions of Chinese folklore and historical events etched into its walls offer a glimpse into the rich traditions of the Chinese diaspora in Penang. Khoo Kongsi stands as a testament to the enduring spirit of unity and heritage among Penang’s Chinese clans.
                     </p>
                 </section>
+            </div>
+            {/* Back Button */}
+            <div className="back-button-container">
+                <button
+                    onClick={() => navigate(-1)} // Navigate back
+                    className="back-button"
+                >
+                    Back
+                </button>
             </div>
         </div>
     );

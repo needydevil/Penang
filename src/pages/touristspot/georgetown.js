@@ -1,8 +1,11 @@
 import React from 'react';
 import './georgetown.css';
 import ImageCarousel from '../../components/ImageCarousel'; // Adjust path based on your file structure
+import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
 
 const Georgetown = () => {
+    const navigate = useNavigate(); // Initialize navigate
+    
     const images = [
         { id: 1, src: '/peranakanmansion.jpg', alt: 'Pinang Peranakan Mansion', caption: 'Pinang Peranakan Mansion' },
         { id: 2, src: '/streetart2.jpg', alt: 'Street Art', caption: 'Iconic Street Art of Georgetown' },
@@ -48,6 +51,15 @@ const Georgetown = () => {
                         Inside, visitors are greeted with intricate wooden carvings, colorful floor tiles imported from Europe, and open courtyards that reflect the feng shui principles. The mansion is not only a historical landmark but also a living space, housing a boutique hotel and hosting guided tours that delve into its rich history. Cheong Fatt Tze’s story, often referred to as the "Rockefeller of the East," adds an intriguing layer to this cultural gem, making it a must-visit for history enthusiasts.
                     </p>
                 </section>
+            </div>
+            {/* Back Button */}
+            <div className="back-button-container">
+                <button
+                    onClick={() => navigate(-1)} // Navigate back
+                    className="back-button"
+                >
+                    Back
+                </button>
             </div>
         </div>
     );

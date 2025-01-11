@@ -1,8 +1,11 @@
 import React from 'react';
 import './beaches.css';
 import ImageCarousel from '../../components/ImageCarousel'; // Adjust path based on your file structure
+import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
 
 const Beaches = () => {
+    const navigate = useNavigate(); // Initialize navigate
+
     const images = [
         { id: 1, src: '/batuferringhi.webp', alt: 'Batu Ferringhi', caption: 'Batu Ferringhi Beach' },
         { id: 2, src: '/tanjungbungah1.jpg', alt: 'Tanjung Bungah', caption: 'Tanjung Bungah Beach' },
@@ -48,6 +51,16 @@ const Beaches = () => {
                         Visitors can swim, snorkel, or simply relax under the shade of swaying palm trees. For those seeking a bit more excitement, the beach is also a popular spot for fishing and camping. Monkey Beach’s untouched beauty and serene atmosphere make it a must-visit destination for those looking to connect with nature.
                     </p>
                 </section>
+            </div>
+
+            {/* Back Button */}
+            <div className="back-button-container">
+                <button
+                    onClick={() => navigate(-1)} // Navigate back
+                    className="back-button"
+                >
+                    Back
+                </button>
             </div>
         </div>
     );

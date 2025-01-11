@@ -1,8 +1,11 @@
 import React from 'react';
 import './museum.css';
 import ImageCarousel from '../../components/ImageCarousel'; // Adjust path based on your file structure
+import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
 
 const Museum = () => {
+    const navigate = useNavigate(); // Initialize navigate
+    
     const images = [
         { id: 1, src: '/penang-state-museum-and-art-gallery-in-malaysia-photo.jpg', alt: 'Penang State Museum', caption: 'Penang State Museum' },
         { id: 2, src: '/penangwarmuseum.jpg', alt: 'Penang War Museum', caption: 'Penang War Museum' },
@@ -48,6 +51,15 @@ const Museum = () => {
                         The museum also delves into the history and significance of Penang’s street food culture, offering insights into how these dishes are prepared and their cultural relevance. It’s a perfect stop for food enthusiasts and families looking for an engaging and educational experience that combines fun with learning.
                     </p>
                 </section>
+            </div>
+            {/* Back Button */}
+            <div className="back-button-container">
+                <button
+                    onClick={() => navigate(-1)} // Navigate back
+                    className="back-button"
+                >
+                    Back
+                </button>
             </div>
         </div>
     );

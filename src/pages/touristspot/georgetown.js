@@ -4,7 +4,7 @@ import ImageCarousel from '../../components/ImageCarousel'; // Adjust path based
 
 const Georgetown = () => {
     const images = [
-        { id: 1, src: '/kekloksitemple2.jpeg', alt: 'Kek Lok Si Temple', caption: 'Kek Lok Si Temple at Night' },
+        { id: 1, src: '/peranakanmansion.jpg', alt: 'Pinang Peranakan Mansion', caption: 'Pinang Peranakan Mansion' },
         { id: 2, src: '/streetart2.jpg', alt: 'Street Art', caption: 'Iconic Street Art of Georgetown' },
         { id: 3, src: '/cheongfatttzemansion.jpg', alt: 'Cheong Fatt Tze Mansion', caption: 'Cheong Fatt Tze Mansion' },
     ];
@@ -20,12 +20,12 @@ const Georgetown = () => {
             <div className="georgetown-description">
                 <h1 className="georgetown-title">Georgetown</h1>
                 <section className="georgetown-paragraph">
-                    <h2>Kek Lok Si Temple</h2>
-                    <p>
-                        Nestled atop the hills of Air Itam, Kek Lok Si Temple stands as a majestic symbol of faith and harmony. Renowned as the largest Buddhist temple in Malaysia, it is a haven for spiritual reflection and architectural marvels. The temple showcases a blend of Chinese, Thai, and Burmese influences, featuring intricate carvings, vibrant murals, and statues that depict Buddhist teachings.
-                    </p>
-                    <p>
-                        One of its most iconic features is the towering statue of the Goddess of Mercy, Kuan Yin, which rises gracefully against the backdrop of lush greenery. The highlight of any visit is during Chinese New Year, when the temple is illuminated with thousands of lights, creating a breathtaking spectacle. Visitors can also explore the Pagoda of Ten Thousand Buddhas, which combines Chinese, Thai, and Burmese styles, symbolizing unity in diversity.
+                    <h2>Penang Peranakan Mansion</h2>
+                    <p> 
+                        Located in the heart of George Town, the Pinang Peranakan Mansion is a stunning showcase of the Peranakan community's rich heritage. Its exquisite blend of Chinese and Malay influences is reflected in the intricate architecture, antique furnishings, and vibrant tiles. 
+                    </p> 
+                    <p> 
+                        The mansion’s iconic courtyard and vast collection of antiques, jewelry, and traditional costumes offer a glimpse into the opulent lifestyle of the Straits Chinese. Visitors can explore its beautifully preserved spaces and immerse themselves in the unique culture of this fascinating community. 
                     </p>
                 </section>
 

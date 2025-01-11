@@ -6,7 +6,7 @@ const Nature = () => {
     const images = [
         { id: 1, src: '/penanghill.jpg', alt: 'Penang Hill', caption: 'The Scenic Beauty of Penang Hill' },
         { id: 2, src: '/penangnationalpark.jpg', alt: 'Penang National Park', caption: 'Exploring Penang National Park' },
-        { id: 3, src: '/botanicalgarden.jpeg', alt: 'Penang Botanical Gardens', caption: 'Lush Greenery at Penang Botanical Gardens' },
+        { id: 3, src: '/Penang-Botanical-Gardens.jpg', alt: 'Penang Botanical Gardens', caption: 'Lush Greenery at Penang Botanical Gardens' },
     ];
 
     return (

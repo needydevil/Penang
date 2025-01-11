@@ -4,9 +4,9 @@ import ImageCarousel from '../../components/ImageCarousel'; // Adjust path based
 
 const Museum = () => {
     const images = [
-        { id: 1, src: '/penangstatemuseum.jpeg', alt: 'Penang State Museum', caption: 'Penang State Museum' },
+        { id: 1, src: '/penang-state-museum-and-art-gallery-in-malaysia-photo.jpg', alt: 'Penang State Museum', caption: 'Penang State Museum' },
         { id: 2, src: '/penangwarmuseum.jpg', alt: 'Penang War Museum', caption: 'Penang War Museum' },
-        { id: 3, src: '/wonderfood.jpeg', alt: 'Wonderfood Museum', caption: 'Wonderfood Museum' },
+        { id: 3, src: '/Wonderfood-Museum-Penang-Collage.jpg', alt: 'Wonderfood Museum', caption: 'Wonderfood Museum' },
     ];
 
     return (

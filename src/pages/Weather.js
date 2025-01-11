@@ -25,6 +25,11 @@ const Weather = () => {
                     <p>
                         It's best to check local weather forecasts closer to the date of interest for the most accurate and current weather information.
                     </p>
+
+                    <p className="weather-forecast">
+                        Weather Forecast :
+                        <a href="https://www.accuweather.com/en/my/george-town/234975/weather-forecast/234975"> https://www.accuweather.com/en/my/george-town/234975/weather-forecast/234975</a>
+                    </p>
                 </div>
             </div>
         </div>

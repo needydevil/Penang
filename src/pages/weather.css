@@ -55,6 +55,12 @@
     max-width: 1350px;
 }
 
+.weather-forecast {
+    padding-top: 30px;
+    /* Adjust the value to your preference */
+}
+
+
 /* Mobile-Specific Styles */
 @media (max-width: 768px) {
     .weather-page {

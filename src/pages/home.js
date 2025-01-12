@@ -17,26 +17,28 @@ const Home = () => {
         };
     }, []);
 
+    // Set video source based on device type (Mobile/Desktop)
     const videoSrc = isMobile
-        ? "https://www.youtube.com/embed/L_PECjvzgsk?autoplay=1&mute=1&loop=1&playlist=L_PECjvzgsk"
-        : "https://www.youtube.com/embed/ZZ-7Xqbn94I?autoplay=1&mute=1&loop=1&playlist=ZZ-7Xqbn94I";
+        ? "/homepage.mp4" // Replace with the path to your mobile version video
+        : "/homepage.mp4"; // Replace with the path to your desktop version video
 
     return (
         <div className="home-page">
             {/* Full-screen Video */}
             <div className="video-container">
-                <iframe
+                <video
                     className="background-video"
-                    src={videoSrc}
-                    frameBorder="0"
-                    allow="autoplay; encrypted-media"
-                    allowFullScreen
-                    title="Background Video"
-                ></iframe>
+                    autoPlay
+                    loop
+                    muted
+                >
+                    <source src={videoSrc} type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
                 <div className="video-overlay">
                     <h1>Welcome to Areca</h1>
                     <p>
-                        Your gateway to Penang's rich culture, stunning landscapes, and vibrant attractions. 
+                        Your gateway to Penang's rich culture, stunning landscapes, and vibrant attractions.
                         Explore its history, cuisine, and hidden gems with Areca as your guide.
                     </p>
                     <a href="/about">

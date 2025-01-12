@@ -15,6 +15,7 @@
     height: 100%;
     object-fit: cover;
     z-index: -1; /* Places the video behind the text */
+    pointer-events: none; /* Prevents interaction with the iframe */
 }
 
 /* Home Page - Disable scrolling only on this page */
@@ -66,7 +67,6 @@
     cursor: pointer;
     box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease, transform 0.3s ease;
-    margin-left: 535px;
     display: inline-flex; /* Align text and arrow properly */
     align-items: center; /* Vertically align text and arrow */
 }

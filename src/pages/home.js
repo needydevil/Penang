@@ -6,14 +6,14 @@ const Home = () => {
         <div className="home-page">
             {/* Full-screen Video */}
             <div className="video-container">
-                <video
+                <iframe
                     className="background-video"
-                    autoPlay
-                    muted
-                >
-                    <source src="/homepage.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
+                    src="https://www.youtube.com/embed/L_PECjvzgsk?autoplay=1&mute=1&loop=1&playlist=L_PECjvzgsk"
+                    frameBorder="0"
+                    allow="autoplay; encrypted-media"
+                    allowFullScreen
+                    title="Background Video"
+                ></iframe>
                 <div className="video-overlay">
                     <h1>Welcome to Areca</h1>
                     <p>
@@ -21,7 +21,7 @@ const Home = () => {
                         Explore its history, cuisine, and hidden gems with Areca as your guide.
                     </p>
                     <a href="/about">
-                        <button className="start-discovering-button">Start Discovering </button>
+                        <button className="start-discovering-button">Start Discovering</button>
                     </a>
                 </div>
             </div>

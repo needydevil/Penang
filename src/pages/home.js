@@ -19,7 +19,7 @@ const Home = () => {
 
     const videoSrc = isMobile
         ? "https://www.youtube.com/embed/L_PECjvzgsk?autoplay=1&mute=1&loop=1&playlist=L_PECjvzgsk"
-        : "https://www.youtube.com/embed/KeDSg4Y_njg?autoplay=1&mute=1&loop=1&playlist=KeDSg4Y_njg";
+        : "https://www.youtube.com/embed/ZZ-7Xqbn94I?autoplay=1&mute=1&loop=1&playlist=ZZ-7Xqbn94I";
 
     return (
         <div className="home-page">

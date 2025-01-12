@@ -21,7 +21,7 @@ const About = () => {
             <div className='about'>
                 <img
                     className="about-png-image"
-                    src="/about-Png.jpg"
+                    src="/about-png.jpg"
                     alt="Penang Bridge"
                 />
                 <div className='aboutText'>
